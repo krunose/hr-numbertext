@@ -1,0 +1,443 @@
+#
+# Regular number to text transducer for Croatian written in Soros
+# Copyright (c) Krunoslav Šebetić <kruno.se@gmx.com> 2017.
+#
+# version: 2017-05-27
+#
+# get newest version of rules from https://www.github.com/krunose/hr-numbertext
+#              
+# Released under Creative Commons 3.0 Attribution - Share Alike license
+# and relicensed under GNU Lesser General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# Visit http://numbertext.org for more info on Soros language and syntax 
+#
+# OOo issue 103746: https://bz.apache.org/ooo/show_bug.cgi?id=103746
+#
+
+
+__numbertext__
+(\d+)(([\.][\d]+?)) $(\1\2)
+
+## Brojevi
+
+# jednoznamenkasti brojevi
+
+^0 nula
+1 jedan
+2 dva
+3 tri
+4 četiri
+5 pet
+6 šest
+7 sedam
+8 osam
+9 devet
+
+
+# dvoznamenkasti brojevi
+
+11 jedanaest
+14 četrnaest
+16 šesnaest
+1([2,3,5,7-9]) $1naest
+
+10 deset
+([2,3,7,8])(\d) $1deset $2
+4(\d) četrdeset $1
+5(\d) pedeset $1
+6(\d) šezdeset $1
+9(\d) devedeset $1
+
+
+# troznamenkasti brojevi
+
+1(\d\d) sto $1
+2(\d\d) dvjesto $1
+3(\d\d) tristo $1
+6(\d\d) šesto $1
+([4,5,7-9])(\d\d) $1sto $2
+
+
+# tisuću
+
+1(\d{3}) tisuću $1
+2(\d{3}) dvije tisuće $1
+([34])(\d{3}) $1 tisuće $2
+([5-9])(\d{3}) $1 tisuća $2
+(1\d)(\d{3}) $1 tisuća $2
+(\d0)(\d{3}) $1 tisuća $2
+([2,3,7,8])1(\d{3}) $1deset jedna tisuća $2
+41(\d{3}) četrdeset jedna tisuća $1
+51(\d{3}) pedeset jedna tisuća $1
+61(\d{3}) šezdeset jedna tisuća $1
+91(\d{3}) devedeset jedna tisuća $1
+([2,3,7,8])2(\d{3}) $1deset dvije tisuće $2
+42(\d{3}) četrdeset dvije tisuće $2
+52(\d{3}) pedeset dvije tisuće $1
+62(\d{3}) šezdeset dvije tisuće $1
+92(\d{3}) devedeset dvije tisuće $1
+(\d[34])(\d{3}) $1 tisuće $2
+(\d[5-9])(\d{3}) $1 tisuća $2
+(\d00)(\d{3}) $1 tisuća $2
+101(\d{3}) sto jedna tisuća $1
+102(\d{3}) sto dvije tisuće $1
+201(\d{3}) dvjesto jedna tisuća $1
+202(\d{3}) dvjesto dvije tisuće $1
+([3-5,7-9])01(\d{3}) $1sto jedna tisuća $2
+([3-5,7-9])02(\d{3}) $1sto dvije tisuće $2
+601(\d{3}) šesto jedna tisuća $1
+602(\d{3}) šesto dvije tisuće $1
+1(\d{5}) sto $1
+2(\d{5}) dvjesto $1
+([3-5,7-9])(\d{5}) $1sto $2
+6(\d{5}) šesto $1
+
+
+# milijun
+
+1(\d{6}) milijun $1
+([2-9])(\d{6}) $1 milijuna $2
+(\d1)(\d{6}) $1 milijun $2
+(\d[2-9])(\d{6}) $1 milijuna $2
+(\d{2}1)(\d{6}) $1 milijun $2
+(\d{2}[0,2-9])(\d{6}) $1 milijuna $2
+
+
+# milijarda
+
+1(\d{9}) milijarda $1
+2(\d{9}) dvije milijarde $1
+([34])(\d{9}) $1 milijarde $1
+([5-9])(\d{9}) $1 milijardi $2
+(1\d)(\d{9}) $1 milijardi $2
+(\d0)(\d{9}) $1 milijardi $2
+([2,3,7,8])1(\d{9}) $1deset jedna milijarda $2
+41(\d{9}) četrdeset jedna milijarda $1
+51(\d{9}) pedeset jedna milijarda $1
+61(\d{9}) šezdeset jedna milijarda $1
+91(\d{9}) devedeset jedna milijarda $1
+([2,3,7,8])2(\d{9}) $1deset dvije milijarde $2
+42(\d{9}) četrdeset dvije milijarde $2
+52(\d{9}) pedeset dvije milijarde $1
+62(\d{9}) šezdeset dvije milijarde $1
+92(\d{9}) devedeset dvije milijarde $1
+(\d[34])(\d{9}) $1 milijarde $2
+(\d[5-9])(\d{9}) $1 milijardi $2
+(\d00)(\d{9}) $1 milijardi $2
+101(\d{9}) sto jedna milijarda $1
+102(\d{9}) sto dvije milijarde $1
+201(\d{9}) dvjesto jedna milijarda $1
+202(\d{9}) dvjesto dvije milijarde $1
+([3-5,7-9])01(\d{9}) $1sto jedna milijarda $2
+([3-5,7-9])02(\d{9}) $1sto dvije milijarde $2
+601(\d{9}) šesto jedna milijarda $1
+602(\d{9}) šesto dvije milijarde $1
+1(\d{11}) sto $1
+2(\d{11}) dvjesto $1
+([3-5,7-9])(\d{11}) $1sto $2
+6(\d{11}) šesto $1
+
+
+# bilijun
+
+1(\d{12}) bilijun $1
+([2-9])(\d{12}) $1 bilijuna $2
+(\d1)(\d{12}) $1 bilijun $2
+(\d[2-9])(\d{12}) $1 bilijuna $2
+(\d{2}1)(\d{12}) $1 bilijun $2
+(\d{2}[0,2-9])(\d{12}) $1 bilijuna $2
+
+
+# bilijarda
+
+1(\d{15}) bilijarda $1
+2(\d{15}) dvije bilijarde $1
+([34])(\d{15}) $1 bilijarde $1
+([5-9])(\d{15}) $1 bilijardi $2
+(1\d)(\d{15}) $1 bilijardi $2
+(\d0)(\d{15}) $1 bilijardi $2
+([2,3,7,8])1(\d{15}) $1deset jedna bilijarda $2
+41(\d{15}) četrdeset jedna bilijarda $1
+51(\d{15}) pedeset jedna bilijarda $1
+61(\d{15}) šezdeset jedna bilijarda $1
+91(\d{15}) devedeset jedna bilijarda $1
+([2,3,7,8])2(\d{15}) $1deset dvije bilijarde $2
+42(\d{15}) četrdeset dvije bilijarde $2
+52(\d{15}) pedeset dvije bilijarde $1
+62(\d{15}) šezdeset dvije bilijarde $1
+92(\d{15}) devedeset dvije bilijarde $1
+(\d[34])(\d{15}) $1 bilijarde $2
+(\d[5-9])(\d{15}) $1 bilijardi $2
+(\d00)(\d{15}) $1 bilijardi $2
+101(\d{15}) sto jedna bilijarda $1
+102(\d{15}) sto dvije bilijarde $1
+201(\d{15}) dvjesto jedna bilijarda $1
+202(\d{15}) dvjesto dvije bilijarde $1
+([3-5,7-9])01(\d{15}) $1sto jedna bilijarda $2
+([3-5,7-9])02(\d{15}) $1sto dvije bilijarde $2
+601(\d{15}) šesto jedna bilijarda $1
+602(\d{15}) šesto dvije bilijarde $1
+1(\d{17}) sto $1
+2(\d{17}) dvjesto $1
+([3-5,7-9])(\d{17}) $1sto $2
+6(\d{17}) šesto $1
+
+
+# trilijun
+
+1(\d{18}) trilijun $1
+([2-9])(\d{18}) $1 trilijuna $2
+(\d1)(\d{18}) $1 trilijun $2
+(\d[2-9])(\d{18}) $1 trilijuna $2
+(\d{2}1)(\d{18}) $1 trilijun $2
+(\d{2}[0,2-9])(\d{18}) $1 trilijuna $2
+
+
+# trilijarda
+
+1(\d{21}) trilijarda $1
+2(\d{21}) dvije trilijarde $1
+([34])(\d{21}) $1 trilijarde $1
+([5-9])(\d{21}) $1 trilijardi $2
+(1\d)(\d{21}) $1 trilijardi $2
+(\d0)(\d{21}) $1 trilijardi $2
+([2,3,7,8])1(\d{21}) $1deset jedna trilijarda $2
+41(\d{21}) četrdeset jedna trilijarda $1
+51(\d{21}) pedeset jedna trilijarda $1
+61(\d{21}) šezdeset jedna trilijarda $1
+91(\d{21}) devedeset jedna trilijarda $1
+([2,3,7,8])2(\d{21}) $1deset dvije trilijarde $2
+42(\d{21}) četrdeset dvije trilijarde $2
+52(\d{21}) pedeset dvije trilijarde $1
+62(\d{21}) šezdeset dvije trilijarde $1
+92(\d{21}) devedeset dvije trilijarde $1
+(\d[34])(\d{21}) $1 trilijarde $2
+(\d[5-9])(\d{21}) $1 trilijardi $2
+(\d00)(\d{21}) $1 trilijardi $2
+101(\d{21}) sto jedna trilijarda $1
+102(\d{21}) sto dvije trilijarde $1
+201(\d{21}) dvjesto jedna trilijarda $1
+202(\d{21}) dvjesto dvije trilijarde $1
+([3-5,7-9])01(\d{21}) $1sto jedna trilijarda $2
+([3-5,7-9])02(\d{21}) $1sto dvije trilijarde $2
+601(\d{21}) šesto jedna trilijarda $1
+602(\d{21}) šesto dvije trilijarde $1
+1(\d{23}) sto $1
+2(\d{23}) dvjesto $1
+([3-5,7-9])(\d{23}) $1sto $2
+6(\d{23}) šesto $1
+
+
+# kvadrilijun
+
+1(\d{24}) trilijun $1
+([2-9])(\d{24}) $1 trilijuna $2
+(\d1)(\d{24}) $1 trilijun $2
+(\d[2-9])(\d{24}) $1 trilijuna $2
+(\d{2}1)(\d{24}) $1 trilijun $2
+(\d{2}[0,2-9])(\d{24}) $1 trilijuna $2
+
+
+# kvadrilijarda
+
+1(\d{27}) kvadrilijarda $1
+2(\d{27}) dvije kvadrilijarde $1
+([34])(\d{27}) $1 kvadrilijarde $1
+([5-9])(\d{27}) $1 kvadrilijardi $2
+(1\d)(\d{27}) $1 kvadrilijardi $2
+(\d0)(\d{27}) $1 kvadrilijardi $2
+([2,3,7,8])1(\d{27}) $1deset jedna kvadrilijarda $2
+41(\d{27}) četrdeset jedna kvadrilijarda $1
+51(\d{27}) pedeset jedna kvadrilijarda $1
+61(\d{27}) šezdeset jedna kvadrilijarda $1
+91(\d{27}) devedeset jedna kvadrilijarda $1
+([2,3,7,8])2(\d{27}) $1deset dvije kvadrilijarde $2
+42(\d{27}) četrdeset dvije kvadrilijarde $2
+52(\d{27}) pedeset dvije kvadrilijarde $1
+62(\d{27}) šezdeset dvije kvadrilijarde $1
+92(\d{27}) devedeset dvije kvadrilijarde $1
+(\d[34])(\d{27}) $1 kvadrilijarde $2
+(\d[5-9])(\d{27}) $1 kvadrilijardi $2
+(\d00)(\d{27}) $1 kvadrilijardi $2
+101(\d{27}) sto jedna kvadrilijarda $1
+102(\d{27}) sto dvije kvadrilijarde $1
+201(\d{27}) dvjesto jedna kvadrilijarda $1
+202(\d{27}) dvjesto dvije kvadrilijarde $1
+([3-5,7-9])01(\d{27}) $1sto jedna kvadrilijarda $2
+([3-5,7-9])02(\d{27}) $1sto dvije kvadrilijarde $2
+601(\d{27}) šesto jedna kvadrilijarda $1
+602(\d{27}) šesto dvije kvadrilijarde $1
+1(\d{29}) sto $1
+2(\d{29}) dvjesto $1
+([3-5,7-9])(\d{29}) $1sto $2
+6(\d{29}) šesto $1
+
+
+
+# kvintilijun
+
+1(\d{30}) kvintilijun $1
+([2-9])(\d{30}) $1 kvintilijun $2
+(\d1)(\d{30}) $1 kvintilijun $2
+(\d[2-9])(\d{30}) $1 kvintilijuna $2
+(\d{2}1)(\d{30}) $1 kvintilijun $2
+(\d{2}[0,2-9])(\d{30}) $1 kvintilijuna $2
+
+
+# kvintilijarda
+
+1(\d{33}) kvintilijarda $1
+2(\d{33}) dvije kvintilijarde $1
+([34])(\d{33}) $1 kvintilijarde $1
+([5-9])(\d{33}) $1 kvintilijardi $2
+(1\d)(\d{33}) $1 kvintilijardi $2
+(\d0)(\d{33}) $1 kvintilijardi $2
+([2,3,7,8])1(\d{33}) $1deset jedna kvintilijarda $2
+41(\d{33}) četrdeset jedna kvintilijarda $1
+51(\d{33}) pedeset jedna kvintilijarda $1
+61(\d{33}) šezdeset jedna kvintilijarda $1
+91(\d{33}) devedeset jedna kvintilijarda $1
+([2,3,7,8])2(\d{33}) $1deset dvije kvintilijarde $2
+42(\d{33}) četrdeset dvije kvintilijarde $2
+52(\d{33}) pedeset dvije kvintilijarde $1
+62(\d{33}) šezdeset dvije kvintilijarde $1
+92(\d{33}) devedeset dvije kvintilijarde $1
+(\d[34])(\d{33}) $1 kvintilijarde $2
+(\d[5-9])(\d{33}) $1 kvintilijardi $2
+(\d00)(\d{33}) $1 kvintilijardi $2
+101(\d{33}) sto jedna kvintilijarda $1
+102(\d{33}) sto dvije kvintilijarde $1
+201(\d{33}) dvjesto jedna kvintilijarda $1
+202(\d{33}) dvjesto dvije kvintilijarde $1
+([3-5,7-9])01(\d{33}) $1sto jedna kvintilijarda $2
+([3-5,7-9])02(\d{33}) $1sto dvije kvintilijarda $2
+601(\d{33}) šesto jedna kvintilijarda $1
+602(\d{33}) šesto dvije kvintilijarde $1
+1(\d{35}) sto $1
+2(\d{35}) dvjesto $1
+([3-5,7-9])(\d{35}) $1sto $2
+6(\d{35}) šesto $1
+
+
+# sekstilijun
+
+1(\d{36}) sekstilijun $1
+([2-9])(\d{36}) $1 sekstilijun $2
+(\d1)(\d{36}) $1 seksitlijun $2
+(\d[2-9])(\d{36}) $1 seksitlijun $2
+(\d{2}1)(\d{36}) $1 sekstilijun $2
+(\d{2}[0,2-9])(\d{36}) $1 sekstilijun $2
+
+
+# sekstilijarda
+
+1(\d{39}) sekstilijarda $1
+2(\d{39}) dvije sekstilijarde $1
+([34])(\d{39}) $1 sekstilijarde $1
+([5-9])(\d{39}) $1 sekstilijardi $2
+(1\d)(\d{39}) $1 sekstilijardi $2
+(\d0)(\d{39}) $1 sekstilijardi $2
+([2,3,7,8])1(\d{39}) $1deset jedna sekstilijarda $2
+41(\d{39}) četrdeset jedna sekstilijarda $1
+51(\d{39}) pedeset jedna sekstilijarda $1
+61(\d{39}) šezdeset jedna sekstilijarda $1
+91(\d{39}) devedeset jedna sekstilijarda $1
+([2,3,7,8])2(\d{39}) $1deset dvije sekstilijarde $2
+42(\d{39}) četrdeset dvije sekstilijarde $2
+52(\d{39}) pedeset dvije sekstilijarde $1
+62(\d{39}) šezdeset dvije sekstilijarde $1
+92(\d{39}) devedeset dvije sekstilijarde $1
+(\d[34])(\d{39}) $1 sekstilijarde $2
+(\d[5-9])(\d{39}) $1 sekstilijardi $2
+(\d00)(\d{39}) $1 sekstilijardi $2
+101(\d{39}) sto jedna sekstilijarda $1
+102(\d{39}) sto dvije sekstilijarde $1
+201(\d{39}) dvjesto jedna sekstilijarda $1
+202(\d{39}) dvjesto dvije sekstilijarde $1
+([3-5,7-9])01(\d{39}) $1sto jedna sekstilijarda $2
+([3-5,7-9])02(\d{39}) $1sto dvije sekstilijarda $2
+601(\d{39}) šesto jedna sekstilijarda $1
+602(\d{39}) šesto dvije sekstilijarde $1
+1(\d{41}) sto $1
+2(\d{41}) dvjesto $1
+([3-5,7-9])(\d{41}) $1sto $2
+6(\d{41}) šesto $1
+
+
+# septilijun
+
+1(\d{42}) septilijun $1
+([2-9])(\d{42}) $1 septilijun $2
+(\d1)(\d{42}) $1 septilijun $2
+(\d[2-9])(\d{42}) $1 septilijun $2
+(\d{2}1)(\d{42}) $1 septilijun $2
+(\d{2}[0,2-9])(\d{42}) $1 septilijun $2
+
+
+# septilijarda
+
+
+
+
+# oktilijun
+
+
+
+
+# oktilijarda
+
+
+
+
+# nonilijun
+
+
+
+
+# nonilijarda
+
+
+
+
+# decilijun
+
+
+
+
+# decilijarda
+
+
+
+
+# undecilijun
+
+
+
+
+# undecilijarda
+
+
+
+
+# duodecilijun
+
+
+
+
+# duodecilijarda
+
+
+
+
+# tridecilijun
+
+
+
+
+# tridecilijarda
+
+
+
+## Cijene
