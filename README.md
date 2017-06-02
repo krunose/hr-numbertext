@@ -15,6 +15,7 @@ Pravila bi za hrvatski jezik trebala opisati pretvaranje cijelih brojeva, decima
 - ujednačiti različite zapise brojeva (razmak kao razdjelnik tisućica, točka kao razdjelnik tisućica...) u oblik broja koji jezik Soros može interpretirati
 - napisati pravila za pretvorbu decimalnih brojeva
 - napisati pravila za pretvaranje cijena
+- sažeti pravila: za sada su pravila pisana opširno radi izbjegavanja pogrešaka, ali pravila je moguće napisati i sažetije
 - temeljito testirati pravila
 - uključiti pravila u dodatak `numbertext`
 
