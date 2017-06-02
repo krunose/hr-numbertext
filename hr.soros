@@ -693,5 +693,8 @@ __numbertext__
 ([3-5,7-9])(\d{83}) $1sto $2
 6(\d{83}) šesto $1
 
+## decimalni brojevi
+
+
 
 ## Cijene
