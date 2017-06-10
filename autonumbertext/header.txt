@@ -1,0 +1,60 @@
+#
+# Regular number to text transducer for Croatian written in Soros
+# Copyright (c) Krunoslav Šebetić <kruno.se@gmx.com> 2017.
+#
+# version: 2017-05-31
+#
+# get newest version of rules from https://www.github.com/krunose/hr-numbertext
+#              
+# Released under Creative Commons 3.0 Attribution - Share Alike license
+# and relicensed under GNU Lesser General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# Visit http://numbertext.org for more info on Soros language and syntax 
+#
+# OOo issue 103746: https://bz.apache.org/ooo/show_bug.cgi?id=103746
+#
+
+
+__numbertext__
+(\d+)(([\.][\d]+?)) $(\1\2)
+
+## Brojevi
+
+# jednoznamenkasti brojevi
+
+^0 nula
+1 jedan
+2 dva
+3 tri
+4 četiri
+5 pet
+6 šest
+7 sedam
+8 osam
+9 devet
+
+
+# dvoznamenkasti brojevi
+
+11 jedanaest
+14 četrnaest
+16 šesnaest
+1([2,3,5,7-9]) $1naest
+
+10 deset
+([2,3,7,8])(\d) $1deset $2
+4(\d) četrdeset $1
+5(\d) pedeset $1
+6(\d) šezdeset $1
+9(\d) devedeset $1
+
+
+# troznamenkasti brojevi
+
+1(\d\d) sto $1
+2(\d\d) dvjesto $1
+3(\d\d) tristo $1
+6(\d\d) šesto $1
+([4,5,7-9])(\d\d) $1sto $2
