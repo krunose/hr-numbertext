@@ -8,7 +8,7 @@ Ta pravilnost omogućuje automatiziranje izrade pravila prema preddefiniranome p
 
 Prednost je predložaka i u tome što se je ih je jednostavno pripremiti za druge jezike u kojima su brojevi slični kao u hrvatskome. Potrebno je samo urediti predložak i skripta će iz njega generirati pravila za taj jezik.
 
-* iako PHP nije optimalno rješenje za ovakav zadatak, jedini je programski jezik u kojem sam to znao napisati dovoljno brzo i onako kako sam zamislio.
+**&ast;** iako PHP nije optimalno rješenje za ovakav zadatak, jedini je programski jezik u kojem sam to znao napisati dovoljno brzo i onako kako sam zamislio.
 
 ---
 
