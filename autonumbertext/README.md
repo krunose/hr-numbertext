@@ -17,7 +17,8 @@ Prednost je predložaka i u tome što se je ih je jednostavno pripremiti za drug
 
 ## Što još treba napraviti
 
-- dokumentirati princip rada skripte (to će pomoći s korištenjem skripte onima koji ne mogu čitati izvorni kod skripte)
+- dokumentirati kako koristiti skriptu
+- dokumentirati što skripta i kako radi (to će pomoći s korištenjem skripte onima koji ne mogu čitati izvorni kod skripte)
 - dokumentirati strukturu predložaka
 - dokumentirati potencijal skripte i predložaka za izradi pravila za slične/srodne jezike (srpski, bosanski, crnogorski)
 
