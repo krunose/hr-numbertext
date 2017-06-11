@@ -1,6 +1,6 @@
 <?php
 
-/**
+/*
 
 Generiranje pravila za NUMBERTEXT.org iz predloška
 
@@ -12,12 +12,12 @@ version: 0.1 (2017-06-04)
 
 --------------------------------------------------------------
 
-Sintaksa ukratko (GNU/Linux)
+Sintaksa ukratko (GNU/Linux):
 
-	php autonumbertext.php hr
+	php autonumbertext.php <langCode>
 
 
-Detaljan se opis upotrebe skripte, pojedinih datoteka, ali i mogućnosti prilagodbe skripte za druge južnoslavenske jezike nalazi se u datoteci autonumbertext.md.
+Za dokumentaciju v. 'autonumbertext.md'.
 
 --------------------------------------------------------------
 
