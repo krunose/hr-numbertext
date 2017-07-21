@@ -1,38 +1,37 @@
-# hr-numbertext
+# autonumbertext
 
-Repozitorij **hr-numbertext** sadrži pravila za pretvaranje brojevnoga zapisa u slovni zapis, odnosno pravila zapisuju brojeve slovima onako kako bi se ti brojevi izgovarali na hrvatskome jeziku.
+`Autonumbertext` je jednostavna skripta za korištenje iz naredbenoga retka u PHP-u i je zadaća olakšati održavanje pravila za pretvaranje brojeva iz brojevnoga zapisa u slovni zapis.
 
-Za potrebe pretvaranja brojeva u riječi razvijen je jednostavan jezik Soros, koji je pak temeljen na programskom jeziku `regex`, što je pokrata od engleskoga izraza *regular expression* (hr. *pravilni izrazi*).
+Iako PHP nije optimalno rješenje za ovakav zadatak, jedini je programski jezik u kojem sam to znao napisati dovoljno brzo i onako kako sam zamislio. Rado ću prihvatiti sretnija rješenja/jezike.
 
-## NUMBERTEXT.org
+Datoteka `[hr.soros](https://github.com/krunose/hr-numbertext)` sadrži dijelove koji je potrebno napisati samo jednom, ne ponavljaju se: pravila za brojeve do sto; ali postoje i dijelovi koji se ponavljaju: brojevi milijun i bilijun imaju istu strukturu, odnosno svi brojevi na -ijun imaju ista pravila te je samo potrebno mijenjati broj nulā s obzirom na to o kojem se broju radi (milijun: šest nula; bilijun: dvanaest nula).
 
-Projekt se održava na internetskoj adresi [NUMBERTEXT.org](http://numbertext.org/) i nastao je iz potrebe generaliziranja funkcije `BAHTTEXT` iz Microsoftova Excela kako bi ova značajka bila dostupna i u LibreOfficeu, uredskome paketu otvorenoga koda.
+Ta pravilnost omogućuje automatiziranje izrade pravila prema preddefiniranome predlošku. Zadaća je skripte `autonumbertext` olakšati održavanje pravila jer se izmjene za sve brojeve na -ijun mogu napraviti samo na jednom mjestu, u predlošku, a skripta će izmjenu pretvoriti u pravilo za sve brojeve od milijun do tridecilijun.
 
-Na istoj se adresi nalazi i specifikacija jezika Soros koja objašnjava kako pisati pravila: [izravna poveznica na specifikaciju](http://numbertext.org/numbertext.pdf).
+Prednost je predložaka i u tome što se je ih je jednostavno pripremiti za druge jezike u kojima su brojevi slični kao u hrvatskome. Potrebno je samo urediti predložak i skripta će iz njega generirati pravila za taj jezik.
 
-## Testiranje i integriranje pravila
+---
 
-Postoji i [integrirano razvojno ogruženje](http://numbertext.org/Soros.html) (engl. *integrated development enviroment*; skraćeno: IDE) koje omogućuje pisanje i provjeravanje pravila.
-
-Značajka je u LibreOffice integrirana pomoću dodatka [`numbertext-0.9.5.oxt`](https://extensions.libreoffice.org/extensions/numbertext-1).
+- v. [pravila za hrvatski](https://github.com/krunose/hr-numbertext/blob/master/README.md)
+- v. stranice projekta [NUMBERTEXT.org](http://numbertext.org/)
 
 ## Što još treba napraviti
 
-Pravila bi za hrvatski jezik trebala opisati pretvaranje cijelih brojeva, decimalnih brojeva te cijena. Trenutno su opisani samo cijeli brojevi i pravila za hrvatski jezik nisu uključena u projekt NUMBERTEXT.org i nisu dostupan u LibreOfficeu. Prije uključivanja bi pravila trebalo obraditi decimalne brojeve, ispisivanje cijena te dobro testirati pravila.
+- dokumentirati kako koristiti skriptu
+- dokumentirati što skripta i kako radi (to će pomoći s korištenjem skripte onima koji ne mogu čitati izvorni kod skripte)
+- dokumentirati strukturu predložaka
+- dokumentirati potencijal skripte i predložaka za izradi pravila za slične/srodne jezike (srpski, bosanski, crnogorski)
 
-Pojedinačni zadaci prema važnosti i predviđenom redoslijedu izvršavanja:
+## Sadržaj repozitorija
 
-- ujednačiti različite zapise brojeva (razmak kao razdjelnik tisućica, točka kao razdjelnik tisućica...) u oblik broja koji jezik Soros može interpretirati (redak 21. u datoteci `hr.soros`)
-- napisati pravila za pretvorbu decimalnih brojeva
-- napisati pravila za pretvaranje cijena
-- sažeti pravila: pisana su tako da se izbjegnu pogreške, ali broj je pravila moguće smanjiti pisanjem efikasnijih pravilnih izraza (engl. *regular expression*)
-- temeljito testirati pravila
-- uključiti pravila u dodatak `numbertext`
+- `autonumbertext.php` – skripta pisana u PHP-u za raspisivanje pravila na temelju predložaka
+- `number-formats.php` – php-skripta za generiranje valjanih oblika brojeva (v. početni komentar u samoj skripti)
+- `numbers.txt` – nazivi/imena brojeva od tisuću do tridecilijarde; iz ove datoteke `autonumbertext.php` izvlači nazive brojeva
+- `header.txt` – dijelovi pravila koji se ne ponavljaju; jednoznamenkasti i dvoznamenkasti brojevi
+- `femininum.txt` – predložak za brojeve ž. r. od tisuću (uključujući tisuću) nadalje (milijarda, bilijarda, trilijarda ...)
+- `masculinum.txt` – predložak za brojeve m. r. (brojevi na -ijun) od milijun (uključujući milijun) nadalje (milijun, bilijun, trilijun ...)
+- `footer.txt` – pravila koja slijede nakon pravila za cijele brojeve. Ono što slijedi, ali se ne ponavlja. Dijelove koji bi se mogli ponavljati u pravilima za cijene, treba izdvojiti u poseban predložak i prilagoditi skriptu `autonumbertext`
+- `autonumbertext.md` – dokumentacija (u izradi)
 
 ---
-
-Pravila za hrvatski su dostupna na adresi https://github.com/krunose/hr-numbertext
-
----
-
-Zadnja izmjena pravila 2017-05-31
+Repozitorij skripte: https://github.com/krunose/hr-numbertext/autonumbertext
