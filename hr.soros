@@ -2,7 +2,7 @@
 # Regular number to text transducer for Croatian written in Soros
 # Copyright (c) Krunoslav Šebetić <kruno.se@gmx.com> 2017.
 #
-# version: 2017-05-31
+# version: 2017-07-21
 #
 # get newest version of rules from https://www.github.com/krunose/hr-numbertext
 #              
@@ -18,7 +18,88 @@
 
 
 __numbertext__
-(\d+)(([\.][\d]+?)) $(\1\2)
+# (\d+)(([\.][\d]+?)) $(\1\2)
+(\d{1,3}), $(\1)
+(\d{1,3})\s $(\1)
+(\d{1,3}). $(\1)
+(\d{1,3}).(\d{3}) $(\1\2)
+(\d{1,3})\s(\d{3}) $(\1\2)
+(\d{1,3}).(\d{3}) $(\1\2)
+(\d{1,3}),(\d{3}).(\d{3}) $(\1\2\3)
+(\d{1,3})\s(\d{3})\s(\d{3}) $(\1\2\3)
+(\d{1,3}).(\d{3}).(\d{3}) $(\1\2\3)
+(\d{1,3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4)
+(\d{1,3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5)
+(\d{1,3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6)
+(\d{1,3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6\7)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7)
+(\d{1,3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6\7\8)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8)
+(\d{1,3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6\7\8\9)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9)
+(\d{1,3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6\7\8\9\10)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10)
+(\d{1,3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11)
+(\d{1,3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12)
+(\d{1,3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13)
+(\d{1,3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14)
+(\d{1,3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15)
+(\d{1,3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16)
+(\d{1,3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17)
+(\d{1,3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18)
+(\d{1,3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19)
+(\d{1,3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20)
+(\d{1,3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20\21)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20\21)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20\21)
+(\d{1,3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20\21\22)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20\21\22)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20\21\22)
+(\d{1,3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20\21\22\23)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20\21\22\23)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20\21\22\23)
+(\d{1,3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20\21\22\23\24)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20\21\22\23\24)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20\21\22\23\24)
+(\d{1,3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20\21\22\23\24\25)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20\21\22\23\24\25)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20\21\22\23\24\25)
+(\d{1,3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20\21\22\23\24\25\26)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20\21\22\23\24\25\26)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20\21\22\23\24\25\26)
+(\d{1,3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}),(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20\21\22\23\24\25\26\27)
+(\d{1,3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3})\s(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20\21\22\23\24\25\26\27)
+(\d{1,3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}).(\d{3}) $(\1\2\3\4\5\6\7\8\9\10\11\12\13\14\15\16\17\18\19\20\21\22\23\24\25\26\27)
 
 ## Brojevi
 
@@ -59,8 +140,7 @@ __numbertext__
 6(\d\d) šesto $1
 ([4,5,7-9])(\d\d) $1sto $2
 
-
-# tisuću
+# tisuća
 
 1(\d{3}) tisuću $1
 2(\d{3}) dvije tisuće $1
@@ -108,12 +188,12 @@ __numbertext__
 
 # milijarda
 
-1(\d{9}) milijarda $1
+1(\d{9}) milijardu $1
 2(\d{9}) dvije milijarde $1
-([34])(\d{9}) $1 milijarde $1
-([5-9])(\d{9}) $1 milijardi $2
-(1\d)(\d{9}) $1 milijardi $2
-(\d0)(\d{9}) $1 milijardi $2
+([34])(\d{9}) $1 milijarde $2
+([5-9])(\d{9}) $1 milijarda $2
+(1\d)(\d{9}) $1 milijarda $2
+(\d0)(\d{9}) $1 milijarda $2
 ([2,3,7,8])1(\d{9}) $1deset jedna milijarda $2
 41(\d{9}) četrdeset jedna milijarda $1
 51(\d{9}) pedeset jedna milijarda $1
@@ -125,8 +205,8 @@ __numbertext__
 62(\d{9}) šezdeset dvije milijarde $1
 92(\d{9}) devedeset dvije milijarde $1
 (\d[34])(\d{9}) $1 milijarde $2
-(\d[5-9])(\d{9}) $1 milijardi $2
-(\d00)(\d{9}) $1 milijardi $2
+(\d[5-9])(\d{9}) $1 milijarda $2
+(\d00)(\d{9}) $1 milijarda $2
 101(\d{9}) sto jedna milijarda $1
 102(\d{9}) sto dvije milijarde $1
 201(\d{9}) dvjesto jedna milijarda $1
@@ -154,12 +234,12 @@ __numbertext__
 
 # bilijarda
 
-1(\d{15}) bilijarda $1
+1(\d{15}) bilijardu $1
 2(\d{15}) dvije bilijarde $1
-([34])(\d{15}) $1 bilijarde $1
-([5-9])(\d{15}) $1 bilijardi $2
-(1\d)(\d{15}) $1 bilijardi $2
-(\d0)(\d{15}) $1 bilijardi $2
+([34])(\d{15}) $1 bilijarde $2
+([5-9])(\d{15}) $1 bilijarda $2
+(1\d)(\d{15}) $1 bilijarda $2
+(\d0)(\d{15}) $1 bilijarda $2
 ([2,3,7,8])1(\d{15}) $1deset jedna bilijarda $2
 41(\d{15}) četrdeset jedna bilijarda $1
 51(\d{15}) pedeset jedna bilijarda $1
@@ -171,8 +251,8 @@ __numbertext__
 62(\d{15}) šezdeset dvije bilijarde $1
 92(\d{15}) devedeset dvije bilijarde $1
 (\d[34])(\d{15}) $1 bilijarde $2
-(\d[5-9])(\d{15}) $1 bilijardi $2
-(\d00)(\d{15}) $1 bilijardi $2
+(\d[5-9])(\d{15}) $1 bilijarda $2
+(\d00)(\d{15}) $1 bilijarda $2
 101(\d{15}) sto jedna bilijarda $1
 102(\d{15}) sto dvije bilijarde $1
 201(\d{15}) dvjesto jedna bilijarda $1
@@ -200,12 +280,12 @@ __numbertext__
 
 # trilijarda
 
-1(\d{21}) trilijarda $1
+1(\d{21}) trilijardu $1
 2(\d{21}) dvije trilijarde $1
-([34])(\d{21}) $1 trilijarde $1
-([5-9])(\d{21}) $1 trilijardi $2
-(1\d)(\d{21}) $1 trilijardi $2
-(\d0)(\d{21}) $1 trilijardi $2
+([34])(\d{21}) $1 trilijarde $2
+([5-9])(\d{21}) $1 trilijarda $2
+(1\d)(\d{21}) $1 trilijarda $2
+(\d0)(\d{21}) $1 trilijarda $2
 ([2,3,7,8])1(\d{21}) $1deset jedna trilijarda $2
 41(\d{21}) četrdeset jedna trilijarda $1
 51(\d{21}) pedeset jedna trilijarda $1
@@ -217,8 +297,8 @@ __numbertext__
 62(\d{21}) šezdeset dvije trilijarde $1
 92(\d{21}) devedeset dvije trilijarde $1
 (\d[34])(\d{21}) $1 trilijarde $2
-(\d[5-9])(\d{21}) $1 trilijardi $2
-(\d00)(\d{21}) $1 trilijardi $2
+(\d[5-9])(\d{21}) $1 trilijarda $2
+(\d00)(\d{21}) $1 trilijarda $2
 101(\d{21}) sto jedna trilijarda $1
 102(\d{21}) sto dvije trilijarde $1
 201(\d{21}) dvjesto jedna trilijarda $1
@@ -236,22 +316,22 @@ __numbertext__
 # kvadrilijun
 
 1(\d{24}) kvadrilijun $1
-([2-9])(\d{24}) $1 kvadrilijun $2
-(\d0)(\d{24}) $1 kvadrilijun $2
+([2-9])(\d{24}) $1 kvadrilijuna $2
+(\d0)(\d{24}) $1 kvadrilijuna $2
 (\d1)(\d{24}) $1 kvadrilijun $2
-(\d[2-9])(\d{24}) $1 kvadrilijun $2
+(\d[2-9])(\d{24}) $1 kvadrilijuna $2
 (\d{2}1)(\d{24}) $1 kvadrilijun $2
 (\d{2}[0,2-9])(\d{24}) $1 kvadrilijuna $2
 
 
 # kvadrilijarda
 
-1(\d{27}) kvadrilijarda $1
+1(\d{27}) kvadrilijardu $1
 2(\d{27}) dvije kvadrilijarde $1
-([34])(\d{27}) $1 kvadrilijarde $1
-([5-9])(\d{27}) $1 kvadrilijardi $2
-(1\d)(\d{27}) $1 kvadrilijardi $2
-(\d0)(\d{27}) $1 kvadrilijardi $2
+([34])(\d{27}) $1 kvadrilijarde $2
+([5-9])(\d{27}) $1 kvadrilijarda $2
+(1\d)(\d{27}) $1 kvadrilijarda $2
+(\d0)(\d{27}) $1 kvadrilijarda $2
 ([2,3,7,8])1(\d{27}) $1deset jedna kvadrilijarda $2
 41(\d{27}) četrdeset jedna kvadrilijarda $1
 51(\d{27}) pedeset jedna kvadrilijarda $1
@@ -263,8 +343,8 @@ __numbertext__
 62(\d{27}) šezdeset dvije kvadrilijarde $1
 92(\d{27}) devedeset dvije kvadrilijarde $1
 (\d[34])(\d{27}) $1 kvadrilijarde $2
-(\d[5-9])(\d{27}) $1 kvadrilijardi $2
-(\d00)(\d{27}) $1 kvadrilijardi $2
+(\d[5-9])(\d{27}) $1 kvadrilijarda $2
+(\d00)(\d{27}) $1 kvadrilijarda $2
 101(\d{27}) sto jedna kvadrilijarda $1
 102(\d{27}) sto dvije kvadrilijarde $1
 201(\d{27}) dvjesto jedna kvadrilijarda $1
@@ -279,11 +359,10 @@ __numbertext__
 6(\d{29}) šesto $1
 
 
-
 # kvintilijun
 
 1(\d{30}) kvintilijun $1
-([2-9])(\d{30}) $1 kvintilijun $2
+([2-9])(\d{30}) $1 kvintilijuna $2
 (\d0)(\d{30}) $1 kvintilijuna $2
 (\d1)(\d{30}) $1 kvintilijun $2
 (\d[2-9])(\d{30}) $1 kvintilijuna $2
@@ -293,12 +372,12 @@ __numbertext__
 
 # kvintilijarda
 
-1(\d{33}) kvintilijarda $1
+1(\d{33}) kvintilijardu $1
 2(\d{33}) dvije kvintilijarde $1
-([34])(\d{33}) $1 kvintilijarde $1
-([5-9])(\d{33}) $1 kvintilijardi $2
-(1\d)(\d{33}) $1 kvintilijardi $2
-(\d0)(\d{33}) $1 kvintilijardi $2
+([34])(\d{33}) $1 kvintilijarde $2
+([5-9])(\d{33}) $1 kvintilijarda $2
+(1\d)(\d{33}) $1 kvintilijarda $2
+(\d0)(\d{33}) $1 kvintilijarda $2
 ([2,3,7,8])1(\d{33}) $1deset jedna kvintilijarda $2
 41(\d{33}) četrdeset jedna kvintilijarda $1
 51(\d{33}) pedeset jedna kvintilijarda $1
@@ -310,14 +389,14 @@ __numbertext__
 62(\d{33}) šezdeset dvije kvintilijarde $1
 92(\d{33}) devedeset dvije kvintilijarde $1
 (\d[34])(\d{33}) $1 kvintilijarde $2
-(\d[5-9])(\d{33}) $1 kvintilijardi $2
-(\d00)(\d{33}) $1 kvintilijardi $2
+(\d[5-9])(\d{33}) $1 kvintilijarda $2
+(\d00)(\d{33}) $1 kvintilijarda $2
 101(\d{33}) sto jedna kvintilijarda $1
 102(\d{33}) sto dvije kvintilijarde $1
 201(\d{33}) dvjesto jedna kvintilijarda $1
 202(\d{33}) dvjesto dvije kvintilijarde $1
 ([3-5,7-9])01(\d{33}) $1sto jedna kvintilijarda $2
-([3-5,7-9])02(\d{33}) $1sto dvije kvintilijarda $2
+([3-5,7-9])02(\d{33}) $1sto dvije kvintilijarde $2
 601(\d{33}) šesto jedna kvintilijarda $1
 602(\d{33}) šesto dvije kvintilijarde $1
 1(\d{35}) sto $1
@@ -329,22 +408,22 @@ __numbertext__
 # sekstilijun
 
 1(\d{36}) sekstilijun $1
-([2-9])(\d{36}) $1 sekstilijun $2
+([2-9])(\d{36}) $1 sekstilijuna $2
 (\d0)(\d{36}) $1 sekstilijuna $2
-(\d1)(\d{36}) $1 seksitlijun $2
-(\d[2-9])(\d{36}) $1 seksitlijun $2
+(\d1)(\d{36}) $1 sekstilijun $2
+(\d[2-9])(\d{36}) $1 sekstilijuna $2
 (\d{2}1)(\d{36}) $1 sekstilijun $2
 (\d{2}[0,2-9])(\d{36}) $1 sekstilijuna $2
 
 
 # sekstilijarda
 
-1(\d{39}) sekstilijarda $1
+1(\d{39}) sekstilijardu $1
 2(\d{39}) dvije sekstilijarde $1
-([34])(\d{39}) $1 sekstilijarde $1
-([5-9])(\d{39}) $1 sekstilijardi $2
-(1\d)(\d{39}) $1 sekstilijardi $2
-(\d0)(\d{39}) $1 sekstilijardi $2
+([34])(\d{39}) $1 sekstilijarde $2
+([5-9])(\d{39}) $1 sekstilijarda $2
+(1\d)(\d{39}) $1 sekstilijarda $2
+(\d0)(\d{39}) $1 sekstilijarda $2
 ([2,3,7,8])1(\d{39}) $1deset jedna sekstilijarda $2
 41(\d{39}) četrdeset jedna sekstilijarda $1
 51(\d{39}) pedeset jedna sekstilijarda $1
@@ -356,14 +435,14 @@ __numbertext__
 62(\d{39}) šezdeset dvije sekstilijarde $1
 92(\d{39}) devedeset dvije sekstilijarde $1
 (\d[34])(\d{39}) $1 sekstilijarde $2
-(\d[5-9])(\d{39}) $1 sekstilijardi $2
-(\d00)(\d{39}) $1 sekstilijardi $2
+(\d[5-9])(\d{39}) $1 sekstilijarda $2
+(\d00)(\d{39}) $1 sekstilijarda $2
 101(\d{39}) sto jedna sekstilijarda $1
 102(\d{39}) sto dvije sekstilijarde $1
 201(\d{39}) dvjesto jedna sekstilijarda $1
 202(\d{39}) dvjesto dvije sekstilijarde $1
 ([3-5,7-9])01(\d{39}) $1sto jedna sekstilijarda $2
-([3-5,7-9])02(\d{39}) $1sto dvije sekstilijarda $2
+([3-5,7-9])02(\d{39}) $1sto dvije sekstilijarde $2
 601(\d{39}) šesto jedna sekstilijarda $1
 602(\d{39}) šesto dvije sekstilijarde $1
 1(\d{41}) sto $1
@@ -375,22 +454,22 @@ __numbertext__
 # septilijun
 
 1(\d{42}) septilijun $1
-([2-9])(\d{42}) $1 septilijun $2
+([2-9])(\d{42}) $1 septilijuna $2
 (\d0)(\d{42}) $1 septilijuna $2
 (\d1)(\d{42}) $1 septilijun $2
-(\d[2-9])(\d{42}) $1 septilijun $2
+(\d[2-9])(\d{42}) $1 septilijuna $2
 (\d{2}1)(\d{42}) $1 septilijun $2
 (\d{2}[0,2-9])(\d{42}) $1 septilijuna $2
 
 
 # septilijarda
 
-1(\d{45}) septilijarda $1
+1(\d{45}) septilijardu $1
 2(\d{45}) dvije septilijarde $1
-([34])(\d{45}) $1 septilijarde $1
-([5-9])(\d{45}) $1 septilijardi $2
-(1\d)(\d{45}) $1 septilijardi $2
-(\d0)(\d{45}) $1 septilijardi $2
+([34])(\d{45}) $1 septilijarde $2
+([5-9])(\d{45}) $1 septilijarda $2
+(1\d)(\d{45}) $1 septilijarda $2
+(\d0)(\d{45}) $1 septilijarda $2
 ([2,3,7,8])1(\d{45}) $1deset jedna septilijarda $2
 41(\d{45}) četrdeset jedna septilijarda $1
 51(\d{45}) pedeset jedna septilijarda $1
@@ -402,14 +481,14 @@ __numbertext__
 62(\d{45}) šezdeset dvije septilijarde $1
 92(\d{45}) devedeset dvije septilijarde $1
 (\d[34])(\d{45}) $1 septilijarde $2
-(\d[5-9])(\d{45}) $1 septilijardi $2
-(\d00)(\d{45}) $1 septilijardi $2
+(\d[5-9])(\d{45}) $1 septilijarda $2
+(\d00)(\d{45}) $1 septilijarda $2
 101(\d{45}) sto jedna septilijarda $1
 102(\d{45}) sto dvije septilijarde $1
 201(\d{45}) dvjesto jedna septilijarda $1
 202(\d{45}) dvjesto dvije septilijarde $1
 ([3-5,7-9])01(\d{45}) $1sto jedna septilijarda $2
-([3-5,7-9])02(\d{45}) $1sto dvije septilijarda $2
+([3-5,7-9])02(\d{45}) $1sto dvije septilijarde $2
 601(\d{45}) šesto jedna septilijarda $1
 602(\d{45}) šesto dvije septilijarde $1
 1(\d{47}) sto $1
@@ -421,7 +500,7 @@ __numbertext__
 # oktilijun
 
 1(\d{48}) oktilijun $1
-([2-9])(\d{48}) $1 oktilijun $2
+([2-9])(\d{48}) $1 oktilijuna $2
 (\d0)(\d{48}) $1 oktilijuna $2
 (\d1)(\d{48}) $1 oktilijun $2
 (\d[2-9])(\d{48}) $1 oktilijuna $2
@@ -431,12 +510,12 @@ __numbertext__
 
 # oktilijarda
 
-1(\d{51}) oktilijarda $1
+1(\d{51}) oktilijardu $1
 2(\d{51}) dvije oktilijarde $1
-([34])(\d{51}) $1 oktilijarde $1
-([5-9])(\d{51}) $1 oktilijardi $2
-(1\d)(\d{51}) $1 oktilijardi $2
-(\d0)(\d{51}) $1 oktilijardi $2
+([34])(\d{51}) $1 oktilijarde $2
+([5-9])(\d{51}) $1 oktilijarda $2
+(1\d)(\d{51}) $1 oktilijarda $2
+(\d0)(\d{51}) $1 oktilijarda $2
 ([2,3,7,8])1(\d{51}) $1deset jedna oktilijarda $2
 41(\d{51}) četrdeset jedna oktilijarda $1
 51(\d{51}) pedeset jedna oktilijarda $1
@@ -448,14 +527,14 @@ __numbertext__
 62(\d{51}) šezdeset dvije oktilijarde $1
 92(\d{51}) devedeset dvije oktilijarde $1
 (\d[34])(\d{51}) $1 oktilijarde $2
-(\d[5-9])(\d{51}) $1 oktilijardi $2
-(\d00)(\d{51}) $1 oktilijardi $2
+(\d[5-9])(\d{51}) $1 oktilijarda $2
+(\d00)(\d{51}) $1 oktilijarda $2
 101(\d{51}) sto jedna oktilijarda $1
 102(\d{51}) sto dvije oktilijarde $1
 201(\d{51}) dvjesto jedna oktilijarda $1
 202(\d{51}) dvjesto dvije oktilijarde $1
 ([3-5,7-9])01(\d{51}) $1sto jedna oktilijarda $2
-([3-5,7-9])02(\d{51}) $1sto dvije oktilijarda $2
+([3-5,7-9])02(\d{51}) $1sto dvije oktilijarde $2
 601(\d{51}) šesto jedna oktilijarda $1
 602(\d{51}) šesto dvije oktilijarde $1
 1(\d{53}) sto $1
@@ -477,12 +556,12 @@ __numbertext__
 
 # nonilijarda
 
-1(\d{57}) nonilijarda $1
+1(\d{57}) nonilijardu $1
 2(\d{57}) dvije nonilijarde $1
-([34])(\d{57}) $1 nonilijarde $1
-([5-9])(\d{57}) $1 nonilijardi $2
-(1\d)(\d{57}) $1 nonilijardi $2
-(\d0)(\d{57}) $1 nonilijardi $2
+([34])(\d{57}) $1 nonilijarde $2
+([5-9])(\d{57}) $1 nonilijarda $2
+(1\d)(\d{57}) $1 nonilijarda $2
+(\d0)(\d{57}) $1 nonilijarda $2
 ([2,3,7,8])1(\d{57}) $1deset jedna nonilijarda $2
 41(\d{57}) četrdeset jedna nonilijarda $1
 51(\d{57}) pedeset jedna nonilijarda $1
@@ -494,14 +573,14 @@ __numbertext__
 62(\d{57}) šezdeset dvije nonilijarde $1
 92(\d{57}) devedeset dvije nonilijarde $1
 (\d[34])(\d{57}) $1 nonilijarde $2
-(\d[5-9])(\d{57}) $1 nonilijardi $2
-(\d00)(\d{57}) $1 nonilijardi $2
+(\d[5-9])(\d{57}) $1 nonilijarda $2
+(\d00)(\d{57}) $1 nonilijarda $2
 101(\d{57}) sto jedna nonilijarda $1
 102(\d{57}) sto dvije nonilijarde $1
 201(\d{57}) dvjesto jedna nonilijarda $1
 202(\d{57}) dvjesto dvije nonilijarde $1
 ([3-5,7-9])01(\d{57}) $1sto jedna nonilijarda $2
-([3-5,7-9])02(\d{57}) $1sto dvije nonilijarda $2
+([3-5,7-9])02(\d{57}) $1sto dvije nonilijarde $2
 601(\d{57}) šesto jedna nonilijarda $1
 602(\d{57}) šesto dvije nonilijarde $1
 1(\d{59}) sto $1
@@ -523,12 +602,12 @@ __numbertext__
 
 # decilijarda
 
-1(\d{63}) decilijarda $1
+1(\d{63}) decilijardu $1
 2(\d{63}) dvije decilijarde $1
-([34])(\d{63}) $1 decilijarde $1
-([5-9])(\d{63}) $1 decilijardi $2
-(1\d)(\d{63}) $1 decilijardi $2
-(\d0)(\d{63}) $1 decilijardi $2
+([34])(\d{63}) $1 decilijarde $2
+([5-9])(\d{63}) $1 decilijarda $2
+(1\d)(\d{63}) $1 decilijarda $2
+(\d0)(\d{63}) $1 decilijarda $2
 ([2,3,7,8])1(\d{63}) $1deset jedna decilijarda $2
 41(\d{63}) četrdeset jedna decilijarda $1
 51(\d{63}) pedeset jedna decilijarda $1
@@ -540,14 +619,14 @@ __numbertext__
 62(\d{63}) šezdeset dvije decilijarde $1
 92(\d{63}) devedeset dvije decilijarde $1
 (\d[34])(\d{63}) $1 decilijarde $2
-(\d[5-9])(\d{63}) $1 decilijardi $2
-(\d00)(\d{63}) $1 decilijardi $2
+(\d[5-9])(\d{63}) $1 decilijarda $2
+(\d00)(\d{63}) $1 decilijarda $2
 101(\d{63}) sto jedna decilijarda $1
 102(\d{63}) sto dvije decilijarde $1
 201(\d{63}) dvjesto jedna decilijarda $1
 202(\d{63}) dvjesto dvije decilijarde $1
 ([3-5,7-9])01(\d{63}) $1sto jedna decilijarda $2
-([3-5,7-9])02(\d{63}) $1sto dvije decilijarda $2
+([3-5,7-9])02(\d{63}) $1sto dvije decilijarde $2
 601(\d{63}) šesto jedna decilijarda $1
 602(\d{63}) šesto dvije decilijarde $1
 1(\d{65}) sto $1
@@ -569,12 +648,12 @@ __numbertext__
 
 # undecilijarda
 
-1(\d{69}) undecilijarda $1
+1(\d{69}) undecilijardu $1
 2(\d{69}) dvije undecilijarde $1
-([34])(\d{69}) $1 undecilijarde $1
-([5-9])(\d{69}) $1 undecilijardi $2
-(1\d)(\d{69}) $1 undecilijardi $2
-(\d0)(\d{69}) $1 undecilijardi $2
+([34])(\d{69}) $1 undecilijarde $2
+([5-9])(\d{69}) $1 undecilijarda $2
+(1\d)(\d{69}) $1 undecilijarda $2
+(\d0)(\d{69}) $1 undecilijarda $2
 ([2,3,7,8])1(\d{69}) $1deset jedna undecilijarda $2
 41(\d{69}) četrdeset jedna undecilijarda $1
 51(\d{69}) pedeset jedna undecilijarda $1
@@ -586,14 +665,14 @@ __numbertext__
 62(\d{69}) šezdeset dvije undecilijarde $1
 92(\d{69}) devedeset dvije undecilijarde $1
 (\d[34])(\d{69}) $1 undecilijarde $2
-(\d[5-9])(\d{69}) $1 undecilijardi $2
-(\d00)(\d{69}) $1 undecilijardi $2
+(\d[5-9])(\d{69}) $1 undecilijarda $2
+(\d00)(\d{69}) $1 undecilijarda $2
 101(\d{69}) sto jedna undecilijarda $1
 102(\d{69}) sto dvije undecilijarde $1
 201(\d{69}) dvjesto jedna undecilijarda $1
 202(\d{69}) dvjesto dvije undecilijarde $1
 ([3-5,7-9])01(\d{69}) $1sto jedna undecilijarda $2
-([3-5,7-9])02(\d{69}) $1sto dvije undecilijarda $2
+([3-5,7-9])02(\d{69}) $1sto dvije undecilijarde $2
 601(\d{69}) šesto jedna undecilijarda $1
 602(\d{69}) šesto dvije undecilijarde $1
 1(\d{71}) sto $1
@@ -615,12 +694,12 @@ __numbertext__
 
 # duodecilijarda
 
-1(\d{75}) duodecilijarda $1
+1(\d{75}) duodecilijardu $1
 2(\d{75}) dvije duodecilijarde $1
-([34])(\d{75}) $1 duodecilijarde $1
-([5-9])(\d{75}) $1 duodecilijardi $2
-(1\d)(\d{75}) $1 duodecilijardi $2
-(\d0)(\d{75}) $1 duodecilijardi $2
+([34])(\d{75}) $1 duodecilijarde $2
+([5-9])(\d{75}) $1 duodecilijarda $2
+(1\d)(\d{75}) $1 duodecilijarda $2
+(\d0)(\d{75}) $1 duodecilijarda $2
 ([2,3,7,8])1(\d{75}) $1deset jedna duodecilijarda $2
 41(\d{75}) četrdeset jedna duodecilijarda $1
 51(\d{75}) pedeset jedna duodecilijarda $1
@@ -632,14 +711,14 @@ __numbertext__
 62(\d{75}) šezdeset dvije duodecilijarde $1
 92(\d{75}) devedeset dvije duodecilijarde $1
 (\d[34])(\d{75}) $1 duodecilijarde $2
-(\d[5-9])(\d{75}) $1 duodecilijardi $2
-(\d00)(\d{75}) $1 duodecilijardi $2
+(\d[5-9])(\d{75}) $1 duodecilijarda $2
+(\d00)(\d{75}) $1 duodecilijarda $2
 101(\d{75}) sto jedna duodecilijarda $1
 102(\d{75}) sto dvije duodecilijarde $1
 201(\d{75}) dvjesto jedna duodecilijarda $1
 202(\d{75}) dvjesto dvije duodecilijarde $1
 ([3-5,7-9])01(\d{75}) $1sto jedna duodecilijarda $2
-([3-5,7-9])02(\d{75}) $1sto dvije duodecilijarda $2
+([3-5,7-9])02(\d{75}) $1sto dvije duodecilijarde $2
 601(\d{75}) šesto jedna duodecilijarda $1
 602(\d{75}) šesto dvije duodecilijarde $1
 1(\d{77}) sto $1
@@ -660,13 +739,12 @@ __numbertext__
 
 
 # tridecilijarda
-
-1(\d{81}) tridecilijarda $1
+1(\d{81}) tridecilijardu $1
 2(\d{81}) dvije tridecilijarde $1
-([34])(\d{81}) $1 tridecilijarde $1
-([5-9])(\d{81}) $1 tridecilijardi $2
-(1\d)(\d{81}) $1 tridecilijardi $2
-(\d0)(\d{81}) $1 tridecilijardi $2
+([34])(\d{81}) $1 tridecilijarde $2
+([5-9])(\d{81}) $1 tridecilijarda $2
+(1\d)(\d{81}) $1 tridecilijarda $2
+(\d0)(\d{81}) $1 tridecilijarda $2
 ([2,3,7,8])1(\d{81}) $1deset jedna tridecilijarda $2
 41(\d{81}) četrdeset jedna tridecilijarda $1
 51(\d{81}) pedeset jedna tridecilijarda $1
@@ -678,23 +756,17 @@ __numbertext__
 62(\d{81}) šezdeset dvije tridecilijarde $1
 92(\d{81}) devedeset dvije tridecilijarde $1
 (\d[34])(\d{81}) $1 tridecilijarde $2
-(\d[5-9])(\d{81}) $1 tridecilijardi $2
-(\d00)(\d{81}) $1 tridecilijardi $2
+(\d[5-9])(\d{81}) $1 tridecilijarda $2
+(\d00)(\d{81}) $1 tridecilijarda $2
 101(\d{81}) sto jedna tridecilijarda $1
 102(\d{81}) sto dvije tridecilijarde $1
 201(\d{81}) dvjesto jedna tridecilijarda $1
 202(\d{81}) dvjesto dvije tridecilijarde $1
 ([3-5,7-9])01(\d{81}) $1sto jedna tridecilijarda $2
-([3-5,7-9])02(\d{81}) $1sto dvije tridecilijarda $2
+([3-5,7-9])02(\d{81}) $1sto dvije tridecilijarde $2
 601(\d{81}) šesto jedna tridecilijarda $1
 602(\d{81}) šesto dvije tridecilijarde $1
 1(\d{83}) sto $1
 2(\d{83}) dvjesto $1
 ([3-5,7-9])(\d{83}) $1sto $2
 6(\d{83}) šesto $1
-
-## decimalni brojevi
-
-
-
-## Cijene
