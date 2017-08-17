@@ -80,7 +80,9 @@ if(file_exists("numbers.txt")) {
 
 	$numOfNumbers = count($numOfNumbers);
 
-	$c = 1;
+
+	// $digits is multiplying $c with 3, need to start with 2 so we don't print numbers with 3 digits as those don't have separators
+	$c = 2;
 
 	while($c <= $numOfNumbers) {
 	
@@ -109,17 +111,17 @@ if(file_exists("numbers.txt")) {
 
 		for($i = (count($number) - 1); $i >= 0; $i--) {
 
-			switch($splitter) {
+				switch($splitter) {
 
-				case ".":
-					$splitter = ",";
-						break;
+					case ".":
+						$splitter = ",";
+							break;
 
-				case ",":
-					$splitter = ".";
-						break;
+					case ",":
+						$splitter = ".";
+							break;
+				}
 
-			}
 
 
 			if($i != (count($number) - 1)) {
