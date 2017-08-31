@@ -3,7 +3,7 @@
 ([34])(\d{-digit-}) $1 -name-e $2
 ([5-9])(\d{-digit-}) $1 -name-a $2
 (1\d)(\d{-digit-}) $1 -name-a $2
-(\d0)(\d{-digit-}) $1 -name-a $2
+([1-9]0)(\d{-digit-}) $1 -name-a $2
 ([2,3,7,8])1(\d{-digit-}) $1deset jedna -name-a $2
 41(\d{-digit-}) četrdeset jedna -name-a $1
 51(\d{-digit-}) pedeset jedna -name-a $1
@@ -14,9 +14,9 @@
 52(\d{-digit-}) pedeset dvije -name-e $1
 62(\d{-digit-}) šezdeset dvije -name-e $1
 92(\d{-digit-}) devedeset dvije -name-e $1
-(\d[34])(\d{-digit-}) $1 -name-e $2
-(\d[5-9])(\d{-digit-}) $1 -name-a $2
-(\d00)(\d{-digit-}) $1 -name-a $2
+([1-9][34])(\d{-digit-}) $1 -name-e $2
+([1-9][5-9])(\d{-digit-}) $1 -name-a $2
+([1-9]00)(\d{-digit-}) $1 -name-a $2
 101(\d{-digit-}) sto jedna -name-a $1
 102(\d{-digit-}) sto dvije -name-e $1
 201(\d{-digit-}) dvjesto jedna -name-a $1
