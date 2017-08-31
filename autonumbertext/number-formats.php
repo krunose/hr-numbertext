@@ -80,6 +80,14 @@ if(file_exists("numbers.txt")) {
 
 	$numOfNumbers = count($numOfNumbers);
 
+	$splitters = array(
+
+		"[\.]",
+		"[\,]",
+		"[\s]"
+
+	);
+
 
 	// $digits množi $c sa 3, $c mora počinjati sa 2 tako da razultat bude 6 jer brojevi s manje od tri znamenke nemaju razdjelnike ($c = 1; $digits = $c * 3; $digits = 3 > 100 ==> a sto nema razdjelnika)
 	$c = 2;
@@ -100,11 +108,11 @@ if(file_exists("numbers.txt")) {
 
 		if($count % 2 != 0) {
 
-			$splitter = ".";
+			$splitter = $splitters[0];
 
 		} else {
 
-			$splitter = ",";
+			$splitter = $splitters[1];
 
 		}
 
@@ -113,12 +121,12 @@ if(file_exists("numbers.txt")) {
 
 			switch($splitter) {
 
-				case ".":
-					$splitter = ",";
+				case $splitters[0]:
+					$splitter = $splitters[1];
 						break;
 
-				case ",":
-					$splitter = ".";
+				case $splitters[1]:
+					$splitter = $splitters[0];
 						break;
 			}
 
@@ -128,9 +136,9 @@ if(file_exists("numbers.txt")) {
 
 				if($i != 0) {
 
-					$numSplitter .= '(\d{3})' . $splitter;
-					$numDot .= '(\d{3}).';
-					$numSpace .= '(\d{3})\s';
+					$numSplitter .= '(\d{3})' . $splitter;			// dynamic splitter (dots and commas): 1,223.332
+					$numDot .= '(\d{3})' . $splitters[0];			// dot as splitter:							1.223.332
+					$numSpace .= '(\d{3})' . $splitters[2];		// space as splitter:						1 223 332
 
 				} else {
 
@@ -143,8 +151,8 @@ if(file_exists("numbers.txt")) {
 			} else {
 
 				$numSplitter .= '(\d{1,3})' . $splitter;
-				$numDot .= '(\d{1,3}).';
-				$numSpace .= '(\d{1,3})\s';
+				$numDot .= '(\d{1,3})' . $splitters[0];
+				$numSpace .= '(\d{1,3})' . $splitters[2];
 
 			}
 
