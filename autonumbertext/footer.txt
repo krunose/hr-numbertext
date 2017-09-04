@@ -1,1 +1,5 @@
-Samo da provjerim je li sve ovdje
+
+
+# negativni brojevi
+
+[-–][\s]?(\d+) minus $1
