@@ -10,4 +10,4 @@ Skripta je vezana sa hrvatski i nije opći alat namijenjen generiranju pravila z
 
 -----------------------------------
 
-Zadnja izmjena: 2017-08-31
+Zadnja izmjena: 2017-09-04
