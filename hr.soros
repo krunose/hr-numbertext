@@ -2,7 +2,6 @@
 # Regular number to text transducer for Croatian written in Soros
 # Copyright (c) Krunoslav Šebetić <kruno.se@gmx.com> 2017.
 #
-# version: 2017-08-31
 #
 # get newest version of rules from https://www.github.com/krunose/hr-numbertext
 #              
@@ -769,3 +768,8 @@ __numbertext__
 2(\d{83}) dvjesto $1
 ([3-5,7-9])(\d{83}) $1sto $2
 6(\d{83}) šesto $1
+
+
+# negativni brojevi
+
+[-–][\s]?(\d+) minus $1
