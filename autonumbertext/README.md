@@ -20,14 +20,12 @@ Prednost je predložaka i u tome što se je ih je jednostavno pripremiti za drug
 - dokumentirati kako koristiti skriptu
 - dokumentirati što skripta i kako radi (to će pomoći s korištenjem skripte onima koji ne mogu čitati izvorni kod skripte)
 - dokumentirati strukturu predložaka
-- napraviti automatski unos datoteke `number-formats.txt` na odgovarajuće mjesto u `hr.soros`
 - dokumentirati potencijal skripte i predložaka za izradi pravila za slične/srodne jezike (srpski, bosanski, crnogorski)
 
 ## Sadržaj repozitorija
 
 - `autonumbertext.php` – skripta pisana u PHP-u za raspisivanje pravila na temelju predložaka
 - `number-formats.php` – php-skripta za generiranje valjanih oblika brojeva (v. početni komentar u samoj skripti)
-- `number-formats.txt` – rezultat skripte `number-formats.php`, rezultat je potrebno (za sada) ručno unijeti u datoteku `header.txt`.
 - `numbers.txt` – nazivi/imena brojeva od tisuću do tridecilijarde; iz ove datoteke `autonumbertext.php` izvlači nazive brojeva
 - `header.txt` – dijelovi pravila koji se ne ponavljaju; jednoznamenkasti i dvoznamenkasti brojevi
 - `femininum.txt` – predložak za brojeve ž. r. od tisuću (uključujući tisuću) nadalje (milijarda, bilijarda, trilijarda ...)
