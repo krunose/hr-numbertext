@@ -2,13 +2,17 @@
 
 /*
 
-Generiranje pravila za NUMBERTEXT.org iz predloška
+==============================================================
+Generiranje pravila za NUMBERTEXT.org iz predložaka
+==============================================================
+
 
 --------------------------------------------------------------
 
 Copyright (c) Krunoslav Šebetić <kruno.se@gmx.com> 2017.
 
-version: 0.1 (2017-06-04)
+version			0.1.2 (2017-09-06)
+					0.1.1 (2017-07-21)
 
 --------------------------------------------------------------
 
@@ -16,8 +20,17 @@ Sintaksa ukratko (GNU/Linux):
 
 	php autonumbertext.php <langCode>
 
+primjer: php autonumbertext.php hr
+
 
 Za dokumentaciju v. 'autonumbertext.md'.
+
+--------------------------------------------------------------
+
+==== Izmjene ====
+
+2017-09-06	→	ispravljeni nepravilni deklinacijski obrasci (milijardu > milijarda)
+2017-07-21	→	dodan primjer upotrebe
 
 --------------------------------------------------------------
 
@@ -130,11 +143,101 @@ function writeLine($line, $folder, $file) {
 // zamjena oznaka u predlošcima
 function replacePlaceholders($line, $name, $num, $genFolder, $outputFile) {
 
+
+	// uspoređuje se sa 'tisuć' jer je 'u' već skinuto radi dodavanja gramatičkih nastavaka
+	if($name != "tisuć") {
+
+		$gram = "ostalo";
+
+	} else {
+
+		$gram = "tisuću";
+
+	}
+
+
+	// nastavci brojeva ženskoga roda (tisuću, milijarda, bilijarda...)
+	$numberGram = array(
+
+		"tisuću" => array(
+
+			"u",
+			"e",
+			"e",
+			"a",
+			"a",
+			"a",
+			"a",
+			"a",
+			"a",
+			"a",
+			"a",
+			"e",
+			"e",
+			"e",
+			"e",
+			"e",
+			"e",
+			"a",
+			"a",
+			"a",
+			"e",
+			"a",
+			"e",
+			"a",
+			"e",
+			"a",
+			"e"
+
+		),
+
+		"ostalo" => array(
+
+			"a",
+			"e",
+			"e",
+			"i",
+			"i",
+			"i",
+			"a",
+			"a",
+			"a",
+			"a",
+			"a",
+			"e",
+			"e",
+			"e",
+			"e",
+			"e",
+			"e",
+			"i",
+			"i",
+			"a",
+			"e",
+			"a",
+			"e",
+			"a",
+			"a",
+			"a",
+			"e"
+
+		)
+
+	);
+
+
+
 	$line = str_replace("-digit-", $num, $line);
 	$line = str_replace("-name-", $name, $line);
 	$line = str_replace("-digit2-", ($num + 2), $line);
 
-		// zapiši redak u odgovarajuću datoteku nakon što se izvrše sve zamjene
+	if(preg_match("/-gram(\d{1,2})-/", $line, $matches)) {
+
+		$line = str_replace("-gram" . $matches[1] . "-", $numberGram[$gram][$matches[1]], $line);
+
+	}
+
+		// zapiši redak u odgovarajuću datoteku nakon što se izvrši zamjena
 		writeLine($line, $genFolder, $outputFile);
 
 }
@@ -186,7 +289,6 @@ array_filter($numbers);
 
 		$numberName = trim($numberName);
 
-		// prvi broj koji skripta u ovom dijelu ispisuje iz predloška je 'tisuća' (zato tri nule)
 		$zeros = $zeros + 3;
 
 		// ako je riječ o prvom broju iz datoteke 'numbers.txt' ili o parnom retku iz datoteke, riječ o brojevima ženskoga roda ([0]: tisuća, ([1] milijun), [2] milijarda)
@@ -204,7 +306,7 @@ array_filter($numbers);
 		// dodavanje novoga retka iza svakoga broja (vizualno formatiranje)
 		writeLine("\n", $genFolder, $outputFile);
 
-		// ponovi sve iz prethodnoga, ali za brojeve muškoga roda (miliju, bilijun ...)
+		// ponovi sve iz prethodnoga, ali za brojeve muškoga roda (milijun, bilijun ...)
 		} else {
 
 			writeLine("\n\n# " . $wholeNumberName . "\n", $genFolder, $outputFile);
@@ -216,6 +318,12 @@ array_filter($numbers);
 		}
 
 	}
+
+
+
+	// add footer to rules
+	readUserFile($filesNeeded[4], "r", "writeLine", $genFolder, $outputFile, null, null);
+
 
 
 
