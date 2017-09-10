@@ -773,13 +773,3 @@ __numbertext__
 # negativni brojevi
 
 [-–][\s]?(\d+) minus $1
-
-
-# decimalni brojevi
-## preuzeto iz pravila za španjolski jezik (9. 9. 2017.)
-
-([-−]?\d+)[.] $1| točka
-([-−]?\d+)[,] $1| zarez
-([-−]?\d+[.,])([^0]\d) $1| |$2
-([-−]?\d+[.,])(\d)(\d)(\d) |$1 |$2| |$3| |$4
-([-−]?\d+[.,]\d*)(\d) $1| |$2
