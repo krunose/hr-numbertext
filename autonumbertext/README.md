@@ -18,6 +18,7 @@ Skripta se može iskoristiti i za druge jezike, potrebno je samo urediti odgovar
 - dokumentirati kako koristiti skriptu
 - dokumentirati što skripta radi i kako radi
 - dokumentirati strukturu predložaka
+- opisati brojeve prema onome što je izišlo iz pisanja ovih pravila
 
 ## Sadržaj repozitorija
 
