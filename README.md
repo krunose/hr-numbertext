@@ -37,4 +37,4 @@ Pravila za hrvatski su dostupna na adresi https://github.com/krunose/hr-numberte
 
 ---
 
-Zadnja izmjena pravila 2017-09-09
+Zadnja izmjena pravila 2017-09-15
