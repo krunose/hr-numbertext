@@ -10,9 +10,10 @@ Generiranje valjanih oblika brojeva
 
 Copyright (c) Krunoslav Šebetić <kruno.se@gmx.com> 2017.
 
-
-		0.2.1 (2017-08-25)	→		dorađeni komentari
-		0.2 (2017-07-21)		→		inicijalna inačica
+Inačica:	0.2.3	(2017-09-15)	→		engleski komentari i poruke prevedni na hrvatski
+			0.2.2	(2017-08-31)	→		ispravljeni razdjelnici
+			0.2.1	(2017-08-25)	→		dorađeni komentari
+			0.2	(2017-07-21)	→		inicijalna inačica
 
 --------------------------------------------------------------
 
@@ -96,7 +97,7 @@ if(file_exists("numbers.txt")) {
 	
 		$digits = ($c * 3);
 
-		$getNumber = str_repeat("1", $digits); // simulacija broja s odgovarajućim brojem znamenki, e.g. 1111111
+		$getNumber = str_repeat("1", $digits); // simulacija broja s odgovarajućim brojem znamenki, npr. 1111111
 
 		$number = str_split($getNumber, 3);
 
@@ -136,9 +137,9 @@ if(file_exists("numbers.txt")) {
 
 				if($i != 0) {
 
-					$numSplitter .= '(\d{3})' . $splitter;			// dynamic splitter (dots and commas): 1,223.332
-					$numDot .= '(\d{3})' . $splitters[0];			// dot as splitter:							1.223.332
-					$numSpace .= '(\d{3})' . $splitters[2];		// space as splitter:						1 223 332
+					$numSplitter .= '(\d{3})' . $splitter;			// dinamični razdjelnik (točke i zarezi): 1,223.332
+					$numDot .= '(\d{3})' . $splitters[0];			// točka kao razdjelnik:						1.223.332
+					$numSpace .= '(\d{3})' . $splitters[2];		// razmak kao razdjelnik:						1 223 332
 
 				} else {
 
@@ -181,7 +182,7 @@ if(file_exists("numbers.txt")) {
 
 } else {
 
-	exit("Sorry, can't find file 'numbers.txt'. See documentation and check if all needed files are available.\n");
+	exit("Nije pronađena datoteka 'numbers.txt'. Provjerite u dokumentaciji imate li sve potrebne datoteke.\n");
 
 }
 
