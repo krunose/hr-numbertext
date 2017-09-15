@@ -131,11 +131,10 @@ __numbertext__
 
 # troznamenkasti brojevi
 
-1(\d\d) sto $1
-2(\d\d) dvjesto $1
-3(\d\d) tristo $1
-6(\d\d) šesto $1
-([457-9])(\d\d) $1sto $2
+1(\d{2}) sto $1
+2(\d{2}) dvjesto $1
+([3-57-9])(\d{2}) $1sto $2
+6(\d{2}) šesto $1
 
 # tisuću
 
@@ -773,3 +772,65 @@ __numbertext__
 # negativni brojevi
 
 [-–][\s]?(\d+) minus $1
+
+
+# redni brojevi do (i uključujući) devedeset devet tisuća devetsto devedeset devet
+
+1[\.] prvi
+2[\.] drugi
+3[\.] treći
+4[\.] četvrti
+5[\.] peti
+6[\.] šesti
+7[\.] sedmi
+8[\.] osmi
+9[\.] deveti
+(1[0-9])[\.] $1i
+([2378])(\d[\.]) $1deset $2
+4(\d[\.]) četrdeset $1
+5(\d[\.]) pedeset $1
+6(\d[\.]) šezdeset $1
+9(\d[\.]) devedeset $1
+100[\.] stoti
+10(\d[\.]) sto $1
+200[\.] dvjestoti
+20(\d[\.]) dvjesto $1
+([3-57-9])00[\.] $1stoti
+([3-57-9])0(\d[\.]) $1sto $1
+600. šestoti
+60(\d[\.]) šesto $1
+1(\d{2}[\.]) sto $1
+2(\d{2}[\.]) dvjesto $1
+([3-57-9])(\d{2}[\.]) $1sto $2
+6(\d{2}[\.]) šesto $1
+1000[\.] tisućiti
+100(\d[\.]) tisuću $1
+10(\d{2}[\.]) tisuću $1
+1(\d{3}[\.]) tisuću $1
+2000[\.] dvijetisućiti
+200(\d[\.]) dvije tisuće $1
+20(\d{2}[\.]) dvije tisuće $1
+2(\d{3}[\.]) dvije tisuće $1
+([3-9])000[\.] $1tisućiti
+([3-9])00(\d[\.]) $1 tisuće $2
+([3-9])0(\d{2}[\.]) $1 tisuće $2
+([3-9])(\d{3}[\.]) $1 tisuće $2
+(1[0-9])000[\.] $1tisućiti
+(1[0-9])00(\d[\.]) $1 tisuća $2
+(1[0-9])0(\d{2}[\.]) $1 tisuća $2
+(1[0-9])(\d{3}[\.]) $1 tisuća $2
+([1-9]0)000[\.] $1 tisućiti
+([1-9]\d)00(\d[\.]) $1 tisuća $2
+([1-9]\d)0(\d{2}[\.]) $1 tisuća $2
+([1-9]0)(\d{3}[\.]) $1 tisuća $2
+([2-47-9]1)(\d{3}[\.]) $1deset jednu tisuću $2
+51(\d{3}[\.]) pedeset jednu tisuću $1
+61(\d{3}[\.]) šezdeset jednu tisuću $1
+([2-47-9]2)(\d{3}[\.]) $1deset dvije tisuće $2
+52(\d{3}[\.]) pedeset dvije tisuće $1
+62(\d{3}[\.]) šezdeset dvije tisuće $1
+([2-47-9][34])(\d{3}[\.]) $1deset dvije tisuće $2
+5[34](\d{3}[\.]) pedeset $1 tisuće $2
+6[34](\d{3}[\.]) šezdeset $1 tisuće $2
+([1-9][5-9])(\d{3}[\.]) $1 tisuća $2
+
