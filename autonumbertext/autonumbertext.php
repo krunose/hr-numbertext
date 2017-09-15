@@ -11,8 +11,8 @@ Generiranje pravila za NUMBERTEXT.org iz predložaka
 
 Copyright (c) Krunoslav Šebetić <kruno.se@gmx.com> 2017.
 
-version			0.1.2 (2017-09-06)
-					0.1.1 (2017-07-21)
+Inačica:			0.1.2 (2017-09-06)	→		ispravljeni nepravilni deklinacijski obrasci (milijardu > milijarda)
+					0.1.1 (2017-07-21)	→		dodan primjer upotrebe
 
 --------------------------------------------------------------
 
@@ -25,14 +25,6 @@ primjer: php autonumbertext.php hr
 
 Za dokumentaciju v. 'autonumbertext.md'.
 
---------------------------------------------------------------
-
-==== Izmjene ====
-
-2017-09-06	→	ispravljeni nepravilni deklinacijski obrasci (milijardu > milijarda)
-2017-07-21	→	dodan primjer upotrebe
-
---------------------------------------------------------------
 
 */
 
