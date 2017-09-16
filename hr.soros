@@ -776,6 +776,8 @@ __numbertext__
 
 # redni brojevi do (i uključujući) devedeset devet tisuća devetsto devedeset devet
 
+# redni brojevi do (i uključujući) devedeset devet tisuća devetsto devedeset devet
+
 1[\.] prvi
 2[\.] drugi
 3[\.] treći
@@ -796,7 +798,7 @@ __numbertext__
 200[\.] dvjestoti
 20(\d[\.]) dvjesto $1
 ([3-57-9])00[\.] $1stoti
-([3-57-9])0(\d[\.]) $1sto $1
+([3-57-9])0(\d[\.]) $1sto $2
 600. šestoti
 60(\d[\.]) šesto $1
 1(\d{2}[\.]) sto $1
@@ -826,11 +828,10 @@ __numbertext__
 ([2-47-9]1)(\d{3}[\.]) $1deset jednu tisuću $2
 51(\d{3}[\.]) pedeset jednu tisuću $1
 61(\d{3}[\.]) šezdeset jednu tisuću $1
-([2-47-9]2)(\d{3}[\.]) $1deset dvije tisuće $2
+([2-47-9])(2\d{3}[\.]) $1deset $2
 52(\d{3}[\.]) pedeset dvije tisuće $1
 62(\d{3}[\.]) šezdeset dvije tisuće $1
 ([2-47-9][34])(\d{3}[\.]) $1deset dvije tisuće $2
 5[34](\d{3}[\.]) pedeset $1 tisuće $2
 6[34](\d{3}[\.]) šezdeset $1 tisuće $2
 ([1-9][5-9])(\d{3}[\.]) $1 tisuća $2
-
