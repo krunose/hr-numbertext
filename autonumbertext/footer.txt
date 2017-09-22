@@ -6,7 +6,7 @@
 
 
 
-## redni brojevi do (i uključujući) devetnaest milijuna devedeset devet tisuća devetsto devedeset devet
+## redni brojevi do (i uključujući) devetnaest milijuna devetsto devedeset devet tisuća devetsto devedeset devet
 
 ^0[\.]$ nulti
 1[\.] prvi
