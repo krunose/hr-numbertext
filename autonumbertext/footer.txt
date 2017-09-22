@@ -5,7 +5,6 @@
 [-–][\s]?(\d+) minus $1
 
 
-# redni brojevi do (i uključujući) devedeset devet tisuća devetsto devedeset devet
 
 ## redni brojevi do (i uključujući) devedeset devet tisuća devetsto devedeset devet
 
@@ -151,6 +150,50 @@
 5([5-9])(\d{3}[\.]) pedeset $1 tisuća $2
 6([5-9])(\d{3}[\.]) šezdeset $1 tisuća $2
 9([5-9])(\d{3}[\.]) devedeset $1 tisuća $2
+100000[\.] stotisućiti
+10000(\d[\.]) sto tisuća $1
+1000(\d{2}[\.]) sto tisuća $1
+100(\d{3}[\.]) sto tisuća $1
+10(\d{4}[\.]) sto tisuća $1
+1(\d{5}[\.]) sto $1
+200000[\.] dvjestotisućiti
+20000(\d[\.]) dvjesto tisuća $1
+2000(\d{2}[\.]) dvjesto tisuća $1
+200(\d{2}[\.]) dvjesto tisuća $1
+20(\d{4}[\.]) dvjesto tisuća $1
+2(\d{5}[\.]) dvjesto tisuća $1
+([3-57-9])00000[\.] $1stotisućiti
+([3-57-9])0000(\d[\.]) $1sto tisuća $2
+([3-57-9])000(\d{2}[\.]) $1sto tisuća $2
+([3-57-9])00(\d{3}[\.]) $1sto tisuća $2
+([3-57-9])0(\d{4}[\.]) $1sto tisuća $2
+([3-57-9])(\d{5}[\.]) $1sto tisuća $2
+600000[\.] šestotisućiti
+60000(\d[\.]) $1sto tisuća $2
+6000(\d{2}[\.]) $1sto tisuća $2
+600(\d{3}[\.]) $1sto tisuća $2
+60(\d{4}[\.]) $1sto tisuća $2
+6(\d{5}[\.]) $1sto tisuća $2
+1000000[\.] milijunti
+100000(\d[\.]) milijun $1
+1000(\d{2}[\.]) milijun $1
+100(\d{3}[\.]) milijun $1
+10(\d{4}[\.]) milijun $1
+1(\d{5}[\.]) milijun $1
+([2-9])000000[\.] $1milijunti
+([2-9])00000(\d[\.]) $1 milijuna $2
+([2-9])0000(\d{2}[\.]) $1 milijuna $2
+([2-9])000(\d{3}[\.]) $1 milijuna $2
+([2-9])00(\d{4}[\.]) $1 milijuna $2
+([2-9])0(\d{5}[\.]) $1 milijuna $2
+([2-9])(\d{6}[\.]) $1 milijuna $2
+(1[0-9])000000[\.] $1milijunti
+(1[0-9])00000(\d[\.]) $1 milijuna $2
+(1[0-9])0000(\d{2}[\.]) $1 milijuna $2
+(1[0-9])000(\d{3}[\.]) $1 milijuna $2
+(1[0-9])00(\d{4}[\.]) $1 milijuna $2
+(1[0-9])0(\d{5}[\.]) $1 milijuna $2
+(1[0-9])(\d{6}[\.]) $1 milijuna $2
 
 
 # decimalni brojevi (iz pravila za španjolski - 9. 9. 2017.)
