@@ -1,6 +1,6 @@
 1(\d{-digit-}) -name- $1
 ([2-9])(\d{-digit-}) $1 -name-a $2
-([1-9]0)(\d{-digit-}) $1 -name-a $2
+([1-9]0{1,2})(\d{-digit-}) $1 -name-a $2
 ([1-9]1)(\d{-digit-}) $1 -name- $2
 ([1-9][2-9])(\d{-digit-}) $1 -name-a $2
 ([1-9]{2}1)(\d{-digit-}) $1 -name- $2
