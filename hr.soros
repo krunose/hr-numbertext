@@ -175,7 +175,7 @@ __numbertext__
 
 1(\d{6}) milijun $1
 ([2-9])(\d{6}) $1 milijuna $2
-([1-9]0)(\d{6}) $1 milijuna $2
+([1-9]0{1,2})(\d{6}) $1 milijuna $2
 ([1-9]1)(\d{6}) $1 milijun $2
 ([1-9][2-9])(\d{6}) $1 milijuna $2
 ([1-9]{2}1)(\d{6}) $1 milijun $2
@@ -221,7 +221,7 @@ __numbertext__
 
 1(\d{12}) bilijun $1
 ([2-9])(\d{12}) $1 bilijuna $2
-([1-9]0)(\d{12}) $1 bilijuna $2
+([1-9]0{1,2})(\d{12}) $1 bilijuna $2
 ([1-9]1)(\d{12}) $1 bilijun $2
 ([1-9][2-9])(\d{12}) $1 bilijuna $2
 ([1-9]{2}1)(\d{12}) $1 bilijun $2
@@ -267,7 +267,7 @@ __numbertext__
 
 1(\d{18}) trilijun $1
 ([2-9])(\d{18}) $1 trilijuna $2
-([1-9]0)(\d{18}) $1 trilijuna $2
+([1-9]0{1,2})(\d{18}) $1 trilijuna $2
 ([1-9]1)(\d{18}) $1 trilijun $2
 ([1-9][2-9])(\d{18}) $1 trilijuna $2
 ([1-9]{2}1)(\d{18}) $1 trilijun $2
@@ -313,7 +313,7 @@ __numbertext__
 
 1(\d{24}) kvadrilijun $1
 ([2-9])(\d{24}) $1 kvadrilijuna $2
-([1-9]0)(\d{24}) $1 kvadrilijuna $2
+([1-9]0{1,2})(\d{24}) $1 kvadrilijuna $2
 ([1-9]1)(\d{24}) $1 kvadrilijun $2
 ([1-9][2-9])(\d{24}) $1 kvadrilijuna $2
 ([1-9]{2}1)(\d{24}) $1 kvadrilijun $2
@@ -359,7 +359,7 @@ __numbertext__
 
 1(\d{30}) kvintilijun $1
 ([2-9])(\d{30}) $1 kvintilijuna $2
-([1-9]0)(\d{30}) $1 kvintilijuna $2
+([1-9]0{1,2})(\d{30}) $1 kvintilijuna $2
 ([1-9]1)(\d{30}) $1 kvintilijun $2
 ([1-9][2-9])(\d{30}) $1 kvintilijuna $2
 ([1-9]{2}1)(\d{30}) $1 kvintilijun $2
@@ -405,7 +405,7 @@ __numbertext__
 
 1(\d{36}) sekstilijun $1
 ([2-9])(\d{36}) $1 sekstilijuna $2
-([1-9]0)(\d{36}) $1 sekstilijuna $2
+([1-9]0{1,2})(\d{36}) $1 sekstilijuna $2
 ([1-9]1)(\d{36}) $1 sekstilijun $2
 ([1-9][2-9])(\d{36}) $1 sekstilijuna $2
 ([1-9]{2}1)(\d{36}) $1 sekstilijun $2
@@ -451,7 +451,7 @@ __numbertext__
 
 1(\d{42}) septilijun $1
 ([2-9])(\d{42}) $1 septilijuna $2
-([1-9]0)(\d{42}) $1 septilijuna $2
+([1-9]0{1,2})(\d{42}) $1 septilijuna $2
 ([1-9]1)(\d{42}) $1 septilijun $2
 ([1-9][2-9])(\d{42}) $1 septilijuna $2
 ([1-9]{2}1)(\d{42}) $1 septilijun $2
@@ -497,7 +497,7 @@ __numbertext__
 
 1(\d{48}) oktilijun $1
 ([2-9])(\d{48}) $1 oktilijuna $2
-([1-9]0)(\d{48}) $1 oktilijuna $2
+([1-9]0{1,2})(\d{48}) $1 oktilijuna $2
 ([1-9]1)(\d{48}) $1 oktilijun $2
 ([1-9][2-9])(\d{48}) $1 oktilijuna $2
 ([1-9]{2}1)(\d{48}) $1 oktilijun $2
@@ -543,7 +543,7 @@ __numbertext__
 
 1(\d{54}) nonilijun $1
 ([2-9])(\d{54}) $1 nonilijuna $2
-([1-9]0)(\d{54}) $1 nonilijuna $2
+([1-9]0{1,2})(\d{54}) $1 nonilijuna $2
 ([1-9]1)(\d{54}) $1 nonilijun $2
 ([1-9][2-9])(\d{54}) $1 nonilijuna $2
 ([1-9]{2}1)(\d{54}) $1 nonilijun $2
@@ -589,7 +589,7 @@ __numbertext__
 
 1(\d{60}) decilijun $1
 ([2-9])(\d{60}) $1 decilijuna $2
-([1-9]0)(\d{60}) $1 decilijuna $2
+([1-9]0{1,2})(\d{60}) $1 decilijuna $2
 ([1-9]1)(\d{60}) $1 decilijun $2
 ([1-9][2-9])(\d{60}) $1 decilijuna $2
 ([1-9]{2}1)(\d{60}) $1 decilijun $2
@@ -635,7 +635,7 @@ __numbertext__
 
 1(\d{66}) undecilijun $1
 ([2-9])(\d{66}) $1 undecilijuna $2
-([1-9]0)(\d{66}) $1 undecilijuna $2
+([1-9]0{1,2})(\d{66}) $1 undecilijuna $2
 ([1-9]1)(\d{66}) $1 undecilijun $2
 ([1-9][2-9])(\d{66}) $1 undecilijuna $2
 ([1-9]{2}1)(\d{66}) $1 undecilijun $2
@@ -681,7 +681,7 @@ __numbertext__
 
 1(\d{72}) duodecilijun $1
 ([2-9])(\d{72}) $1 duodecilijuna $2
-([1-9]0)(\d{72}) $1 duodecilijuna $2
+([1-9]0{1,2})(\d{72}) $1 duodecilijuna $2
 ([1-9]1)(\d{72}) $1 duodecilijun $2
 ([1-9][2-9])(\d{72}) $1 duodecilijuna $2
 ([1-9]{2}1)(\d{72}) $1 duodecilijun $2
@@ -727,7 +727,7 @@ __numbertext__
 
 1(\d{78}) tridecilijun $1
 ([2-9])(\d{78}) $1 tridecilijuna $2
-([1-9]0)(\d{78}) $1 tridecilijuna $2
+([1-9]0{1,2})(\d{78}) $1 tridecilijuna $2
 ([1-9]1)(\d{78}) $1 tridecilijun $2
 ([1-9][2-9])(\d{78}) $1 tridecilijuna $2
 ([1-9]{2}1)(\d{78}) $1 tridecilijun $2
@@ -774,7 +774,6 @@ __numbertext__
 [-–][\s]?(\d+) minus $1
 
 
-# redni brojevi do (i uključujući) devedeset devet tisuća devetsto devedeset devet
 
 ## redni brojevi do (i uključujući) devedeset devet tisuća devetsto devedeset devet
 
@@ -920,4 +919,142 @@ __numbertext__
 5([5-9])(\d{3}[\.]) pedeset $1 tisuća $2
 6([5-9])(\d{3}[\.]) šezdeset $1 tisuća $2
 9([5-9])(\d{3}[\.]) devedeset $1 tisuća $2
-
+100000[\.] stotisućiti
+10000(\d[\.]) sto tisuća $1
+1000(\d{2}[\.]) sto tisuća $1
+100(\d{3}[\.]) sto tisuća $1
+10(\d{4}[\.]) sto tisuća $1
+1(\d{5}[\.]) sto $1
+200000[\.] dvjestotisućiti
+20000(\d[\.]) dvjesto tisuća $1
+2000(\d{2}[\.]) dvjesto tisuća $1
+200(\d{2}[\.]) dvjesto tisuća $1
+20(\d{4}[\.]) dvjesto tisuća $1
+2(\d{5}[\.]) dvjesto tisuća $1
+([3-57-9])00000[\.] $1stotisućiti
+([3-57-9])0000(\d[\.]) $1sto tisuća $2
+([3-57-9])000(\d{2}[\.]) $1sto tisuća $2
+([3-57-9])00(\d{3}[\.]) $1sto tisuća $2
+([3-57-9])0(\d{4}[\.]) $1sto tisuća $2
+([3-57-9])(\d{5}[\.]) $1sto tisuća $2
+600000[\.] šestotisućiti
+60000(\d[\.]) $1sto tisuća $2
+6000(\d{2}[\.]) $1sto tisuća $2
+600(\d{3}[\.]) $1sto tisuća $2
+60(\d{4}[\.]) $1sto tisuća $2
+6(\d{5}[\.]) $1sto tisuća $2
+1000000[\.] milijunti
+100000(\d[\.]) milijun $1
+1000(\d{2}[\.]) milijun $1
+100(\d{3}[\.]) milijun $1
+10(\d{4}[\.]) milijun $1
+1(\d{5}[\.]) milijun $1
+([2-9])000000[\.] $1milijunti
+([2-9])00000(\d[\.]) $1 milijuna $2
+([2-9])0000(\d{2}[\.]) $1 milijuna $2
+([2-9])000(\d{3}[\.]) $1 milijuna $2
+([2-9])00(\d{4}[\.]) $1 milijuna $2
+([2-9])0(\d{5}[\.]) $1 milijuna $2
+([2-9])(\d{6}[\.]) $1 milijuna $2
+(1[0-9])000000[\.] $1milijunti
+(1[0-9])00000(\d[\.]) $1 milijuna $2
+(1[0-9])0000(\d{2}[\.]) $1 milijuna $2
+(1[0-9])000(\d{3}[\.]) $1 milijuna $2
+(1[0-9])00(\d{4}[\.]) $1 milijuna $2
+(1[0-9])0(\d{5}[\.]) $1 milijuna $2
+(1[0-9])(\d{6}[\.]) $1 milijuna $2
+([2-9]0)000000[\.] $1milijunti
+([2-9]0)00000(\d[\.]) $1 milijuna $2
+([2-9]0)0000(\d{2}[\.]) $1 milijuna $2
+([2-9]0)000(\d{3}[\.]) $1 milijuna $2
+([2-9]0)00(\d{4})[\.]) $1 milijuna $2
+([2-9]0)0(\d{5}[\.]) $1 milijuna $2
+([2-9]0)(\d{6}[\.]) $1 milijuna $2
+(\d{2})000000[\.] $1milijunti
+([2-9]1)00000(\d[\.]) $1 milijun $2
+([2-9]1)0000(\d{2}[\.]) $1 milijun $2
+([2-9]1)000(\d{3}[\.]) $1 milijun $2
+([2-9]1)00(\d{4}[\.]) $1 milijun $2
+([2-9]1)0(\d{5}[\.]) $1 milijun $2
+([2-9]1)(\d{6}[\.]) $1 milijun $2
+([2-9][2-9])00000(\d[\.]) $1 milijuna $2
+([2-9][2-9])0000(\d{2}[\.]) $1 milijuna $2
+([2-9][2-9])000(\d{3}[\.]) $1 milijuna $2
+([2-9][2-9])00(\d{4}[\.]) $1 milijuna $2
+([2-9][2-9])0(\d{5}[\.]) $1 milijuna $2
+([2-9][2-9])(\d{6}[\.]) $1 milijuna $2
+(\d{3})000000[\.] $1milijunti
+([1-9]00)00000(\d[\.]) $1 milijuna $2
+([1-9]00)0000(\d{2}[\.]) $1 milijuna $2
+([1-9]00)000(\d{3}[\.]) $1 milijuna $2
+([1-9]00)00(\d{4}[\.]) $1 milijuna $2
+([1-9]00)0(\d{5}[\.]) $1 milijuna $2
+([1-9]00)(\d{6}[\.]) $1 milijuna $2
+101000000[\.] stojedanmilijunti
+(101)00000(\d[\.]) $1 milijun $2
+(101)0000(\d{2}[\.]) $1 milijun $2
+(101)000(\d{3}[\.]) $1 milijun $2
+(101)00(\d{4}[\.]) $1 milijun $2
+(101)0(\d{5}[\.]) $1 milijun $2
+(101)(\d{6}[\.]) $1 milijun $2
+10([2-9])000000[\.] sto$1milijunti
+(10[2-9])00000(\d[\.]) $1 milijuna $2
+(10[2-9])0000(\d{2}[\.]) $1 milijuna $2
+(10[2-9])000(\d{3}[\.]) $1 milijuna $2
+(10[2-9])00(\d{4}[\.]) $1 milijuna $2
+(10[2-9])0(\d{5}[\.]) $1 milijuna $2
+(10[2-9])(\d{6}[\.]) $1 milijuna $2
+201000000[\.] dvjesto$1milijunti
+20100000(\d[\.]) dvjesto jedan milijun $1
+2010000(\d{2}[\.]) dvjesto jedan milijun $1
+201000(\d{3}[\.]) dvjesto jedan milijun $1
+20100(\d{4}[\.]) dvjesto jedan milijun $1
+2010(\d{5}[\.]) dvjesto jedan milijun $1
+201(\d{6}[\.]) dvjesto jedan milijun $1
+20([2-9])000000[\.] dvjesto$1milijunti
+(20[2-9])00000(\d[\.]) $1 milijuna $2
+(20[2-9])0000(\d{2}[\.]) $1 milijuna $2
+(20[2-9])000(\d{3}[\.]) $1 milijuna $2
+(20[2-9])00(\d{4}[\.]) $1 milijuna $2
+(20[2-9])0(\d{5}[\.]) $1 milijuna $2
+(20[2-9])(\d{6}[\.]) $1 milijuna $2
+([3-579])01000000[\.] $1stojedanmilijunti
+([3-579]01)00000(\d[\.]) $1 milijun $2
+([3-579]01)0000(\d{2}[\.]) $1 milijun $2
+([3-579]01)000(\d{3}[\.]) $1 milijun $2
+([3-579]01)00(\d{4}[\.]) $1 milijun $2
+([3-579]01)0(\d{5}[\.]) $1 milijun $2
+([3-579]01)(\d{6}[\.]) $1 milijun $2
+([3-579])0([2-9])000000[\.] $1$2milijunti
+([3-579]0[2-9])00000(\d[\.]) $1 milijuna $2
+([3-579]0[2-9])0000(\d{2}[\.]) $1 milijuna $2
+([3-579]0[2-9])000(\d{3}[\.]) $1 milijuna $2
+([3-579]0[2-9])00(\d{4}[\.]) $1 milijuna $2
+([3-579]0[2-9])0(\d{5}[\.]) $1 milijuna $2
+([3-579]0[2-9])(\d{6}[\.]) $1 milijuna $2
+601000000[\.] $1stojedanmilijunti
+(601)00000(\d[\.]) $1 milijun $2
+(601)0000(\d{2}[\.]) $1 milijun $2
+(601)000(\d{3}[\.]) $1 milijun $2
+(601)00(\d{4}[\.]) $1 milijun $2
+(601)0(\d{5}[\.]) $1 milijun $2
+(601)(\d{6}[\.]) $1 milijun $2
+60([2-9])000000[\.] šesto$1milijunti
+(60[2-9])00000(\d[\.]) $1 milijuna $2
+(60[2-9])0000(\d{2}[\.]) $1 milijuna $2
+(60[2-9])000(\d{3}[\.]) $1 milijuna $2
+(60[2-9])00(\d{4}[\.]) $1 milijuna $2
+(60[2-9])0(\d{5}[\.]) $1 milijuna $2
+(60[2-9])(\d{6}[\.]) $1 milijuna $2
+100000000[\.] stomilijunti
+1([1-9]\d{7}[\.]) sto $1
+200000000[\.] dvjestomilijunti
+2([1-9]\d{7}[\.]) dvjesto $1
+([3478])00000000[\.] $1stomilijunti
+([3478])([1-9]\d{7}[\.]) $1sto $2
+500000000[\.] petstomilijunti
+5([1-9]\d{7}[\.]) petsto $1
+600000000[\.] šestomilijunti
+6([1-9]\d{7}[\.]) šesto $1
+900000000[\.] devetstomilijunti
+9([1-9]\d{7}[\.]) devetsto $1
