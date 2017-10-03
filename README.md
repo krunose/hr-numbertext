@@ -22,6 +22,7 @@ Pojedinačni zadaci prema važnosti i predviđenom redoslijedu izvršavanja:
 
 - napisati pravila za pretvorbu decimalnih brojeva
 - napisati pravila za pretvaranje cijena
+- napraviti predložak za redne brojeve kao što postoji za prirodne brojeve
 - sažeti pravila: pisana su tako da se izbjegnu pogreške, ali broj je pravila moguće smanjiti pisanjem efikasnijih pravilnih izraza (engl. *regular expression*)
 - temeljito testirati pravila
 - uključiti pravila u dodatak `numbertext`
