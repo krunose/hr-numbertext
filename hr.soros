@@ -1269,13 +1269,3 @@ __numbertext__
 9([1-9][2-9])00(\d{4}[\.]) devetsto $1 milijuna $2
 9([1-9][2-9])0(\d{5}[\.]) devetsto $1 milijuna $2
 9([1-9][2-9])(\d{6}[\.]) devetsto $1 milijuna $2
-
-
-
-# decimalni brojevi (iz pravila za španjolski - 9. 9. 2017.)
-
-([-−]?\d+)[.] $1| točka
-([-−]?\d+)[,] $1| zarez
-([-−]?\d+[.,])([^0]\d) $1| |$2
-([-−]?\d+[.,])(\d)(\d)(\d) |$1 |$2| |$3| |$4
-([-−]?\d+[.,]\d*)(\d) $1| |$2
