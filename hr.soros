@@ -938,7 +938,7 @@ __numbertext__
 ([3-57-9])0(\d{4}[\.]) $1sto tisuća $2
 ([3-57-9])(\d{5}[\.]) $1sto $2
 600000[\.] šestotisućiti
-60000(\d[\.]) šest tisuća $2
+60000(\d[\.]) šesto tisuća $2
 6000(\d{2}[\.]) šesto tisuća $2
 600(\d{3}[\.]) šesto tisuća $2
 60(\d{4}[\.]) šest tisuća $2
@@ -1269,3 +1269,4 @@ __numbertext__
 9([1-9][2-9])00(\d{4}[\.]) devetsto $1 milijuna $2
 9([1-9][2-9])0(\d{5}[\.]) devetsto $1 milijuna $2
 9([1-9][2-9])(\d{6}[\.]) devetsto $1 milijuna $2
+
