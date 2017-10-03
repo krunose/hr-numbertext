@@ -1270,3 +1270,315 @@ __numbertext__
 9([1-9][2-9])0(\d{5}[\.]) devetsto $1 milijuna $2
 9([1-9][2-9])(\d{6}[\.]) devetsto $1 milijuna $2
 
+1000000000[\.] milijarditi
+100000000(\d[\.])  milijardu $1
+10000000(\d{2}[\.])  milijardu $1
+1000000(\d{3}[\.])  milijardu $1
+100000(\d{4}[\.]) milijardu $1
+10000(\d{5}[\.]) milijardu $1
+1000(\d{6}[\.]) milijardu $1
+100(\d{7}[\.]) milijardu $1
+10(\d{8}[\.]) milijardu $1
+1(\d{9}[\.]) milijardu $1
+2000000000[\.] dvijemilijarditi
+200000000(\d[\.])  dvije milijarde $1
+20000000(\d{2}[\.])  dvije milijarde $1
+2000000(\d{3}[\.])  dvije milijarde $1
+200000(\d{4}[\.])  dvije milijarde $1
+20000(\d{5}[\.])  dvije milijarde $1
+2000(\d{6}[\.])  dvije milijarde $1
+200(\d{7}[\.])  dvije milijarde $1
+20(\d{8}[\.])  dvije milijarde $1
+2(\d{9}[\.])  dvije milijarde $1
+([34])000000000[\.] $1milijarditi
+([34])00000000(\d[\.])  $1 milijarde $2
+([34])0000000(\d{2}[\.])  $1 milijarde $2
+([34])000000(\d{3}[\.])  $1 milijarde $2
+([34])00000(\d{4}[\.])  $1 milijarde $2
+([34])0000(\d{5}[\.])  $1 milijarde $2
+([34])000(\d{6}[\.])  $1 milijarde $2
+([34])00(\d{7}[\.])  $1 milijarde $2
+([34])0(\d{8}[\.])  $1 milijarde $2
+([34])(\d{9}[\.])  $1 milijarde $2
+([5-9])000000000[\.] $1milijarditi
+([5-9])00000000(\d[\.])  $1 milijardi $2
+([5-9])0000000(\d{2}[\.])  $1 milijardi $2
+([5-9])000000(\d{3}[\.])  $1 milijardi $2
+([5-9])00000(\d{4}[\.])  $1 milijardi $2
+([5-9])0000(\d{5}[\.])  $1 milijardi $2
+([5-9])000(\d{6}[\.])  $1 milijardi $2
+([5-9])00(\d{7}[\.])  $1 milijardi $2
+([5-9])0(\d{8}[\.])  $1 milijardi $2
+([5-9])(\d{9}[\.])  $1 milijardi $2
+(1[0-9])000000000[\.] $1milijarditi
+(1[0-9])00000000(\d[\.]) $1 milijardi $2
+(1[0-9])0000000(\d{2}[\.]) $1 milijardi $2
+(1[0-9])000000(\d{3}[\.]) $1 milijardi $2
+(1[0-9])00000(\d{4}[\.]) $1 milijardi $2
+(1[0-9])0000(\d{5}[\.]) $1 milijardi $2
+(1[0-9])000(\d{6}[\.]) $1 milijardi $2
+(1[0-9])00(\d{7}[\.]) $1 milijardi $2
+(1[0-9])0(\d{8}[\.]) $1 milijardi $2
+(1[0-9])(\d{9}[\.]) $1 milijardi $2
+([2378])0000000000[\.] $1desetmilijarditi
+40000000000[\.] četrdesetmilijarditi
+50000000000[\.] pedesetmilijarditi
+60000000000[\.] šezdesetmilijarditi
+90000000000[\.] devedesetmilijarditi
+([2-9]0)00000000(\d[\.]) $1 milijardi $2
+([2-9]0)0000000(\d{2}[\.]) $1 milijardi $2
+([2-9]0)000000(\d{3}[\.]) $1 milijardi $2
+([2-9]0)00000(\d{4}[\.]) $1 milijardi $2
+([2-9]0)0000(\d{5}[\.]) $1 milijardi $2
+([2-9]0)000(\d{6}[\.]) $1 milijardi $2
+([2-9]0)00(\d{7}[\.]) $1 milijardi $2
+([2-9]0)0(\d{8}[\.]) $1 milijardi $2
+([2-9]0)(\d{9}[\.]) $1 milijardi $2
+([2378])1000000000[\.] $1desetjednumilijarditi
+41000000000[\.] četrdesetjednumilijarditi
+51000000000[\.] pedesetjednumilijarditi
+61000000000[\.] šezdesetjednumilijarditi
+91000000000[\.] devedesetjednumilijarditi
+([2378])100000000(\d[\.]) $1deset jednu milijardu $2
+4100000000(\d[\.]) četrdeset jednu milijardu $1
+5100000000(\d[\.]) pedeset jednu milijardu $1
+6100000000(\d[\.]) šezdeset milijardu $1
+9100000000(\d[\.]) devedeset jednu milijardu $1
+([2378])10000000(\d{2}[\.]) $1deset jednu milijardu $2
+410000000(\d{2}[\.]) četrdeset jednu milijardu $1
+510000000(\d{2}[\.]) pedeset jednu milijardu $1
+610000000(\d{2}[\.]) šezdeset jednu milijardu $1
+910000000(\d{2}[\.]) devedeset jednu milijardu $1
+([2378])1000000(\d{3}[\.]) $1deset jednu milijardu $2
+41000000(\d{3}[\.]) četrdeset jednu milijardu $1
+51000000(\d{3}[\.]) pedeset jednu milijardu $1
+61000000(\d{3}[\.]) šezdeset jednu milijardu $1
+91000000(\d{3}[\.]) devedeset jednu milijardu $1
+([2378])100000(\d{4}[\.]) $1deset jednu milijardu $2
+4100000(\d{4}[\.]) četrdeset jednu milijardu $1
+5100000(\d{4}[\.]) pedeset jednu milijardu $1
+6100000(\d{4}[\.]) šezdeset jednu milijardu $1
+9100000(\d{4}[\.]) devedeset jednu milijardu $1
+([2378])10000(\d{5}[\.]) $1deset jednu milijardu $2
+410000(\d{5}[\.]) četrdeset jednu milijardu $1
+510000(\d{5}[\.]) pedeset jednu milijardu $1
+610000(\d{5}[\.]) šezdeset jednu milijardu $1
+910000(\d{5}[\.]) devedeset jednu milijardu $1
+([2378])1000(\d{6}[\.]) $1deset jednu milijardu $2
+41000(\d{6}[\.]) četrdeset jednu milijardu $1
+51000(\d{6}[\.]) pedeset jednu milijardu $1
+61000(\d{6}[\.]) šezdeset jednu milijardu $1
+91000(\d{6}[\.]) devedeset jednu milijardu $1
+([2378])100(\d{7}[\.]) $1deset jednu milijardu $2
+4100(\d{7}[\.]) četrdeset jednu milijardu $1
+5100(\d{7}[\.]) pedeset jednu milijardu $1
+6100(\d{7}[\.]) šezdeset jednu milijardu $1
+9100(\d{7}[\.]) devedeset jednu milijardu $1
+([2378])10(\d{8}[\.]) $1deset jednu milijardu $2
+410(\d{8}[\.]) četrdeset jednu milijardu $1
+510(\d{8}[\.]) pedeset jednu milijardu $1
+610(\d{8}[\.]) šezdeset jednu milijardu $1
+910(\d{8}[\.]) devedeset jednu milijardu $1
+([2378])1(\d{9}[\.]) $1deset jednu milijardu $2
+41(\d{9}[\.]) četrdeset jednu milijardu $1
+51(\d{9}[\.]) pedeset jednu milijardu $1
+61(\d{9}[\.]) šezdeset jednu milijardu $1
+91(\d{9}[\.]) devedeset jednu milijardu $1
+([2378])2000000000[\.] $1desetdvijemilijarditi
+42000000000[\.] četrdesetdvijemilijarditi
+52000000000[\.] pedesetdvijemilijarditi
+62000000000[\.] šezdesetdvijemilijarditi
+92000000000[\.] devedesetdvijemilijarditi
+([2378])200000000(\d[\.]) $1deset dvije milijarde $2
+4200000000(\d[\.]) četrdeset dvije milijarde $1
+5200000000(\d[\.]) pedeset dvije milijarde $1
+6200000000(\d[\.]) šezdeset dvije milijarde $1
+9200000000(\d[\.]) devedeset dvije milijarde $1
+([2378])20000000(\d{2}[\.]) $1deset dvije milijarde $2
+420000000(\d{2}[\.]) četrdeset dvije milijarde $1
+520000000(\d{2}[\.]) pedeset dvije milijarde $1
+620000000(\d{2}[\.]) šezdeset dvije milijarde $1
+920000000(\d{2}[\.]) devedeset dvije milijarde $1
+([2378])2000000(\d{3}[\.]) $1deset dvije milijarde $2
+42000000(\d{3}[\.]) četrdeset dvije milijarde $1
+52000000(\d{3}[\.]) pedeset dvije milijarde $1
+62000000(\d{3}[\.]) šezdeset dvije milijarde $1
+92000000(\d{3}[\.]) devedeset dvije milijarde $1
+([2378])200000(\d{4}[\.]) $1deset dvije milijarde $2
+4200000(\d{4}[\.]) četrdeset dvije milijarde $1
+5200000(\d{4}[\.]) pedeset dvije milijarde $1
+6200000(\d{4}[\.]) šezdeset dvije milijarde $1
+9200000(\d{4}[\.]) devedeset dvije milijarde $1
+([2378])20000(\d{5}[\.]) $1deset dvije milijarde $2
+420000(\d{5}[\.]) četrdeset dvije milijarde $1
+520000(\d{5}[\.]) pedeset dvije milijarde $1
+620000(\d{5}[\.]) šezdeset dvije milijarde $1
+920000(\d{5}[\.]) devedeset dvije milijarde $1
+([2378])2000(\d{6}[\.]) $1deset dvije milijarde $2
+42000(\d{6}[\.]) četrdeset dvije milijarde $1
+52000(\d{6}[\.]) pedeset dvije milijarde $1
+62000(\d{6}[\.]) šezdeset dvije milijarde $1
+92000(\d{6}[\.]) devedeset dvije milijarde $1
+([2378])200(\d{7}[\.]) $1deset dvije milijarde $2
+4200(\d{7}[\.]) četrdeset dvije milijarde $1
+5200(\d{7}[\.]) pedeset dvije milijarde $1
+6200(\d{7}[\.]) šezdeset dvije milijarde $1
+9200(\d{7}[\.]) devedeset dvije milijarde $1
+([2378])20(\d{8}[\.]) $1deset dvije milijarde $2
+420(\d{8}[\.]) četrdeset dvije milijarde $1
+520(\d{8}[\.]) pedeset dvije milijarde $1
+620(\d{8}[\.]) šezdeset dvije milijarde $1
+920(\d{8}[\.]) devedeset dvije milijarde $1
+([2378])2(\d{9}[\.]) $1deset dvije milijarde $2
+42(\d{9}[\.]) četrdeset dvije milijarde $1
+52(\d{9}[\.]) pedeset dvije milijarde $1
+62(\d{9}[\.]) šezdeset dvije milijarde $1
+92(\d{9}[\.]) devedeset dvije milijarde $1
+([2378])([34])000000000[\.] $1deset$2milijarditi
+4([34])000000000[\.] četrdeset$2milijarditi
+5([34])000000000[\.] pedeset$2milijarditi
+6([34])000000000[\.] šezdeset$2milijarditi
+9([34])000000000[\.] devedeset$2milijarditi
+([2378])([34])00000000(\d[\.]) $1deset $2 milijarde $3
+4([34])00000000(\d[\.]) četrdeset $1 milijarde $2
+5([34])00000000(\d[\.]) pedeset $1 milijarde $2
+6([34])00000000(\d[\.]) šezdeset $1 milijarde $2
+9([34])00000000(\d[\.]) devedeset $1 milijarde $2
+([2378])([34])0000000(\d{2}[\.]) $1deset $2 milijarde $3
+4([34])0000000(\d{2}[\.]) četrdeset $1 milijarde $2
+5([34])0000000(\d{2}[\.]) pedeset $1 milijarde $2
+6([34])0000000(\d{2}[\.]) šezdeset $1 milijarde $2
+9([34])0000000(\d{2}[\.]) devedeset $1 milijarde $2
+([2378])([34])000000(\d{3}[\.]) $1deset $2 milijarde $3
+4([34])000000(\d{3}[\.]) četrdeset $1 milijarde $2
+5([34])000000(\d{3}[\.]) pedeset $1 milijarde $2
+6([34])000000(\d{3}[\.]) šezdeset $1 milijarde $2
+9([34])000000(\d{3}[\.]) devedeset $1 milijarde $2
+([2378])([34])00000(\d{4}[\.]) $1deset $2 milijarde $3
+4([34])00000(\d{4}[\.]) četrdeset $1 milijarde $2
+5([34])00000(\d{4}[\.]) pedeset $1 milijarde $2
+6([34])00000(\d{4}[\.]) šezdeset $1 milijarde $2
+9([34])00000(\d{4}[\.]) devedeset $1 milijarde $2
+([2378])([34])0000(\d{5}[\.]) $1deset $2 milijarde $3
+4([34])0000(\d{5}[\.]) četrdeset $1 milijarde $2
+5([34])0000(\d{5}[\.]) pedeset $1 milijarde $2
+6([34])0000(\d{5}[\.]) šezdeset $1 milijarde $2
+9([34])0000(\d{5}[\.]) devedeset $1 milijarde $2
+([2378])([34])000(\d{6}[\.]) $1deset $2 milijarde $3
+4([34])000(\d{6}[\.]) četrdeset $1 milijarde $2
+5([34])000(\d{6}[\.]) pedeset $1 milijarde $2
+6([34])000(\d{6}[\.]) šezdeset $1 milijarde $2
+9([34])000(\d{6}[\.]) devedeset $1 milijarde $2
+([2378])([34])00(\d{7}[\.]) $1deset $2 milijarde $3
+4([34])00(\d{7}[\.]) četrdeset $1 milijarde $2
+5([34])00(\d{7}[\.]) pedeset $1 milijarde $2
+6([34])00(\d{7}[\.]) šezdeset $1 milijarde $2
+9([34])00(\d{7}[\.]) devedeset $1 milijarde $2
+([2378])([34])0(\d{8}[\.]) $1deset $2 milijarde $3
+4([34])0(\d{8}[\.]) četrdeset $1 milijarde $2
+5([34])0(\d{8}[\.]) pedeset $1 milijarde $2
+6([34])0(\d{8}[\.]) šezdeset $1 milijarde $2
+9([34])0(\d{8}[\.]) devedeset $1 milijarde $2
+([2378])([34])(\d{9}[\.]) $1deset $2 milijarde $3
+4([34])(\d{9}[\.]) četrdeset $1 milijarde $2
+5([34])(\d{9}[\.]) pedeset $1 milijarde $2
+6([34])(\d{9}[\.]) šezdeset $1 milijarde $2
+9([34])(\d{9}[\.]) devedeset $1 milijarde $2
+([2378])([5-9])000000000[\.] $1deset$2milijarditi
+4([5-9])000000000[\.] četrdeset$2milijarditi
+5([5-9])000000000[\.] pedeset$2milijarditi
+6([5-9])000000000[\.] šezdeset$2milijarditi
+9([5-9])000000000[\.] devedeset$2milijarditi
+([2378])([5-9])00000000(\d[\.]) $1deset $2 milijardi $3
+4([5-9])00000000(\d[\.]) četrdeset $1 milijardi $2
+5([5-9])00000000(\d[\.]) pedeset $1 milijardi $2
+6([5-9])00000000(\d[\.]) šezdeset $1 milijardi $2
+9([5-9])00000000(\d[\.]) devedeset $1 milijardi $2
+([2378])([5-9])0000000(\d{2}[\.]) $1deset $2 milijardi $3
+4([5-9])0000000(\d{2}[\.]) četrdeset $1 milijardi $2
+5([5-9])0000000(\d{2}[\.]) pedeset $1 milijardi $2
+6([5-9])0000000(\d{2}[\.]) šezdeset $1 milijardi $2
+9([5-9])0000000(\d{2}[\.]) devedeset $1 milijardi $2
+([2378])([5-9])000000(\d{3}[\.]) $1deset $2 milijardi $3
+4([5-9])000000(\d{3}[\.]) četrdeset $1 milijardi $2
+5([5-9])000000(\d{3}[\.]) pedeset $1 milijardi $2
+6([5-9])000000(\d{3}[\.]) šezdeset $1 milijardi $2
+9([5-9])000000(\d{3}[\.]) devedeset $1 milijardi $2
+([2378])([5-9])00000(\d{4}[\.]) $1deset $2 milijardi $3
+4([5-9])00000(\d{4}[\.]) četrdeset $1 milijardi $2
+5([5-9])00000(\d{4}[\.]) pedeset $1 milijardi $2
+6([5-9])00000(\d{4}[\.]) šezdeset $1 milijardi $2
+9([5-9])00000(\d{4}[\.]) devedeset $1 milijardi $2
+([2378])([5-9])0000(\d{5}[\.]) $1deset $2 milijardi $3
+4([5-9])0000(\d{5}[\.]) četrdeset $1 milijardi $2
+5([5-9])0000(\d{5}[\.]) pedeset $1 milijardi $2
+6([5-9])0000(\d{5}[\.]) šezdeset $1 milijardi $2
+9([5-9])0000(\d{5}[\.]) devedeset $1 milijardi $2
+([2378])([5-9])000(\d{6}[\.]) $1deset $2 milijardi $3
+4([5-9])000(\d{6}[\.]) četrdeset $1 milijardi $2
+5([5-9])000(\d{6}[\.]) pedeset $1 milijardi $2
+6([5-9])000(\d{6}[\.]) šezdeset $1 milijardi $2
+9([5-9])000(\d{6}[\.]) devedeset $1 milijardi $2
+([2378])([5-9])00(\d{7}[\.]) $1deset $2 milijardi $3
+4([5-9])00(\d{7}[\.]) četrdeset $1 milijardi $2
+5([5-9])00(\d{7}[\.]) pedeset $1 milijardi $2
+6([5-9])00(\d{7}[\.]) šezdeset $1 milijardi $2
+9([5-9])00(\d{7}[\.]) devedeset $1 milijardi $2
+([2378])([5-9])0(\d{8}[\.]) $1deset $2 milijardi $3
+4([5-9])0(\d{8}[\.]) četrdeset $1 milijardi $2
+5([5-9])0(\d{8}[\.]) pedeset $1 milijardi $2
+6([5-9])0(\d{8}[\.]) šezdeset $1 milijardi $2
+9([5-9])0(\d{8}[\.]) devedeset $1 milijardi $2
+([2378])([5-9])(\d{9}[\.]) $1deset $2 milijardi $3
+4([5-9])(\d{9}[\.]) četrdeset $1 milijardi $2
+5([5-9])(\d{9}[\.]) pedeset $1 milijardi $2
+6([5-9])(\d{9}[\.]) šezdeset $1 milijardi $2
+9([5-9])(\d{9}[\.]) devedeset $1 milijardi $2
+100000000000[\.] stomilijarditi
+10000000000(\d{1}[\.]) sto milijardi $1
+1000000000(\d{2}[\.]) sto milijardi $1
+100000000(\d{3}[\.]) sto milijardi $1
+10000000(\d{4}[\.]) sto milijardi $1
+1000000(\d{5}[\.]) sto milijardi $1
+100000(\d{6}[\.]) sto milijardi $1
+10000(\d{7}[\.]) sto milijardi $1
+1000(\d{8}[\.]) sto milijardi $1
+100(\d{9}[\.]) sto milijardi $1
+10(\d{10}[\.]) sto milijardi $1
+1(\d{11}[\.]) sto milijardi $1
+200000000000[\.] dvjestomilijarditi
+20000000000(\d{1}[\.]) dvjesto milijardi $1
+2000000000(\d{2}[\.]) dvjesto milijardi $1
+200000000(\d{3}[\.]) dvjesto milijardi $1
+20000000(\d{4}[\.]) dvjesto milijardi $1
+2000000(\d{5}[\.]) dvjesto milijardi $1
+200000(\d{6}[\.]) dvjesto milijardi $1
+20000(\d{7}[\.]) dvjesto milijardi $1
+2000(\d{8}[\.]) dvjesto milijardi $1
+200(\d{9}[\.]) dvjesto milijardi $1
+20(\d{10}[\.]) dvjesto milijardi $1
+2(\d{11}[\.]) dvjesto milijardi $1
+([3-57-9])00000000000[\.] $1stomilijarditi
+([3-57-9])0000000000(\d{1}[\.]) $1 milijardi $2
+([3-57-9])000000000(\d{2}[\.]) $1 milijardi $2
+([3-57-9])00000000(\d{3}[\.]) $1 milijardi $2
+([3-57-9])0000000(\d{4}[\.]) $1 milijardi $2
+([3-57-9])000000(\d{5}[\.]) $1 milijardi $2
+([3-57-9])00000(\d{6}[\.]) $1 milijardi $2
+([3-57-9])0000(\d{7}[\.]) $1 milijardi $2
+([3-57-9])000(\d{8}[\.]) $1 milijardi $2
+([3-57-9])00(\d{9}[\.]) $1 milijardi $2
+([3-57-9])0(\d{10}[\.]) $1 milijardi $2
+([3-57-9])(\d{11}[\.]) $1 milijardi $2
+600000000000[\.] šestomilijarditi
+60000000000(\d{1}[\.]) šesto milijardi $1
+6000000000(\d{2}[\.]) šesto milijardi $1
+600000000(\d{3}[\.]) šesto milijardi $1
+60000000(\d{4}[\.]) šesto milijardi $1
+6000000(\d{5}[\.]) šesto milijardi $1
+600000(\d{6}[\.]) šesto milijardi $1
+60000(\d{7}[\.]) šesto milijardi $1
+6000(\d{8}[\.]) šesto milijardi $1
+600(\d{9}[\.]) šesto milijardi $1
+60(\d{10}[\.]) šesto milijardi $1
+6(\d{11}[\.]) šesto milijardi $1
