@@ -20,6 +20,7 @@ Pravila bi za hrvatski jezik trebala opisati pretvaranje cijelih brojeva, decima
 
 Pojedinačni zadaci prema važnosti i predviđenom redoslijedu izvršavanja:
 
+- ispraviti nedostatke u rednim brojevima od 99999. nadalje
 - napisati pravila za pretvorbu decimalnih brojeva
 - napisati pravila za pretvaranje cijena
 - napraviti predložak za redne brojeve kao što postoji za prirodne brojeve
@@ -29,6 +30,7 @@ Pojedinačni zadaci prema važnosti i predviđenom redoslijedu izvršavanja:
 
 Napravljeno
 
+- napisati pravila za redne brojeve
 - ujednačiti različite zapise brojeva
 - napisati pravila za cijele brojeve
 
