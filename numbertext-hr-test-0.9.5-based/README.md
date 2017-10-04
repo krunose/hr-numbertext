@@ -23,6 +23,10 @@ Sadržaj je ove mape potrebno preuzeti s GitHuba kao ZIP-datoteku i nakon preuzi
 
 Pravila se mogu testirati tako da u ćeliju A1 upišete broj, a u koju drugu ćeliju formulu `=NUMBERTEXT(A1)`. Ako ne koristite hrvatske lokalne postavke za LibreOffice, formulu je potrebno upisati u obliku `=NUMBERTEXT(A1;"hr_HR")`.
 
+## Uređivanje pravila
+
+Pravila su za hrvatski jezik dostupna na https://github.com/krunose/hr-numbertext i na toj se poveznici može naći više o projektu.
+
 ---
 
 https://github.com/krunose/hr-numbertext/numbertext-hr-test-0.9.5-based/
