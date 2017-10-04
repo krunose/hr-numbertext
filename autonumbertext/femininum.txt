@@ -2,7 +2,7 @@
 2(\d{-digit-}) dvije -name--gram1- $1
 ([34])(\d{-digit-}) $1 -name--gram2- $2
 ([5-9])(\d{-digit-}) $1 -name--gram3- $2
-(1\d)(\d{-digit-}) $1 -name--gram4- $2
+(1[1-9])(\d{-digit-}) $1 -name--gram4- $2
 ([1-9]0)(\d{-digit-}) $1 -name--gram5- $2
 ([2378])1(\d{-digit-}) $1deset jedna -name--gram6- $2
 41(\d{-digit-}) četrdeset jedna -name--gram7- $1
