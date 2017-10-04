@@ -42,114 +42,112 @@
 60(\d[\.]) šesto $1
 ([3-57-9])(\d{2}[\.]) $1sto $2
 6(\d{2}[\.]) šesto $1
-1000[\.] tisućiti
-100(\d[\.])  tisuću $1
-10(\d{2}[\.])  tisuću $1
-1(\d{3}[\.])  tisuću $1
-2000[\.] dvijetisućiti
-200(\d[\.])  dvije tisuće $1
-20(\d{2}[\.])  dvije tisuće $1
-2(\d{3}[\.])  dvije tisuće $1
-([34])000[\.] $1tisućiti
-([34])00(\d[\.])  $1 tisuće $2
-([34])0(\d{2}[\.])  $1 tisuće $2
-([34])(\d{3}[\.])  $1 tisuće $2
-([5-9])000[\.] $1tisućiti
-([5-9])00(\d[\.])  $1 tisuća $2
-([5-9])0(\d{2}[\.])  $1 tisuća $2
-([5-9])(\d{3}[\.])  $1 tisuća $2
-(1[0-9])000[\.] $1tisućiti
-(1[0-9])00(\d[\.]) $1 tisuća $2
-(1[0-9])0(\d{2}[\.]) $1 tisuća $2
-(1[0-9])(\d{3}[\.]) $1 tisuća $2
-([2378])0000[\.] $1desettisućiti
-40000[\.] četrdesettisućiti
-50000[\.] pedesettisućiti
-60000[\.] šezdesettisućiti
-90000[\.] devedesettisućiti
-([2-9]0)00(\d[\.]) $1 tisuća $2
-([2-9]0)0(\d{2}[\.]) $1 tisuća $2
-([2-9]0)(\d{3}[\.]) $1 tisuća $2
-([2378])1000[\.] $1desetjednutisućiti
-41000[\.] četrdesetjednutisućiti
-51000[\.] pedesetjednutisućiti
-61000[\.] šezdesetjednutisućiti
-91000[\.] devedesetjednutisućiti
-([2378])100(\d[\.]) $1deset jednu tisuću $2
-4100(\d[\.]) četrdeset jednu tisuću $1
-5100(\d[\.]) pedeset jednu tisuću $1
-6100(\d[\.]) šezdeset jednu $1
-9100(\d[\.]) devedeset jednu tisuću $1
-([2378])10(\d{2}[\.]) $1deset jednu tisuću $2
-410(\d{2}[\.]) četrdeset jednu tisuću $1
-510(\d{2}[\.]) pedeset jednu tisuću $1
-610(\d{2}[\.]) šezdeset jednu tisuću $1
-910(\d{2}[\.]) devedeset jednu tisuću $1
-([2378])1(\d{3}[\.]) $1deset jednu tisuću $2
-41(\d{3}[\.]) četrdeset jednu tisuću $1
-51(\d{3}[\.]) pedeset jednu tisuću $1
-61(\d{3}[\.]) šezdeset jednu tisuću $1
-91(\d{3}[\.]) devedeset jednu tisuću $1
-([2378])2000[\.] $1desetdvijetisućiti
-42000[\.] četrdesetdvijetisućiti
-52000[\.] pedesetdvijetisućiti
-62000[\.] šezdesetdvijetisućiti
+
+
+
+9([3-9])000[\.] devedeset$1tisućiti
+(6[3-9])000[\.] $1tisućiti
+(5[3-9])000[\.] $1tisućiti
+(4[3-9])000[\.] $1tisućiti
+([2378][3-9])000[\.] $1tisućiti
 92000[\.] devedesetdvijetisućiti
+62000[\.] šezdesetdvijetisućiti
+52000[\.] pedesetdvijetisućiti
+42000[\.] četrdesetdvijetisućiti
+([2378])2000[\.] $1desetjednutisućiti
+91000[\.] devedesetjednutisućiti
+61000[\.] šezdesetjednutisućiti
+51000[\.] pedesetjednutisućiti
+41000[\.] četrdesetjednutisućiti
+([2378])1000[\.] $1desetjednutisućiti
+([2-9]0)000[\.] $1desettisućiti
+(1\d)000[\.] $1tisućiti
+([1-9]\d)000[\.] $1tisućiti
+([3-9])000[\.] $1tisućiti
+2000[\.] dvijetisućiti
+1000[\.] tisućiti
+
+100(\d[\.]) tisuću $1
+10(\d{2}[\.]) tisuću $1
+1(\d{3}[\.]) tisuću $1
+
+200(\d[\.]) dvije tisuće $1
+20(\d{2}[\.]) tisuću $1
+2(\d{3}[\.]) tisuću $1
+
+([3-9])00(\d[\.]) $1 tisuće $2
+([3-9])0(\d{2}[\.]) $1 tisuće $2
+([3-9])(\d{3}[\.]) $1 tisuće $2
+
+(1\d)00(\d[\.]) $1 tisuća $2
+(1\d)0(\d{2}[\.]) $1 tisuća $2
+(1\d)(\d{3}[\.]) $1 tisuća $2
+
+([2-9]0)00(\d[\.]) $1deset tisuća $2
+([2-9]0)0(\d{2}[\.]) $1deset tisuća $2
+([2-9]0)(\d{3}[\.]) $1deset tisuća $2
+
+([2378])100(\d[\.]) $1deset jednu tisuću $2
+([2378])10(\d{2}[\.]) $1deset jednu tisuću $2
+([2378])1(\d{3}[\.]) $1deset jednu tisuću $2
+
+4100(\d[\.]) četrdeset jednu tisuću $1
+410(\d{2}[\.]) četrdeset jednu tisuću $1
+41(\d{3}[\.]) četrdeset jednu tisuću $1
+
+5100(\d[\.]) pedeset jednu tisuću $1
+510(\d{2}[\.]) pedeset jednu tisuću $1
+51(\d{3}[\.]) pedeset jednu tisuću $1
+
+6100(\d[\.]) žezdeset jednu tisuću $1
+610(\d{2}[\.]) šezdeset jednu tisuću $1
+61(\d{3}[\.]) šezdeset jednu tisuću $1
+
+9100(\d[\.]) devedeset jednu tisuću $1
+910(\d{2}[\.]) devedeset jednu tisuću $1
+91(\d{3}[\.]) devedeset jednu tisuću $1
+
 ([2378])200(\d[\.]) $1deset dvije tisuće $2
-4200(\d[\.]) četrdeset dvije tisuće $1
-5200(\d[\.]) pedeset dvije tisuće $1
-6200(\d[\.]) šezdeset dvije tisuće $1
-9200(\d[\.]) devedeset dvije tisuće $1
 ([2378])20(\d{2}[\.]) $1deset dvije tisuće $2
-420(\d{2}[\.]) četrdeset dvije tisuće $1
-520(\d{2}[\.]) pedeset dvije tisuće $1
-620(\d{2}[\.]) šezdeset dvije tisuće $1
-920(\d{2}[\.]) devedeset dvije tisuće $1
 ([2378])2(\d{3}[\.]) $1deset dvije tisuće $2
+
+4200(\d[\.]) četrdeset dvije tisuće $1
+420(\d{2}[\.]) četrdeset dvije tisuće $1
 42(\d{3}[\.]) četrdeset dvije tisuće $1
+
+5200(\d[\.]) pedeset dvije tisuće $1
+520(\d{2}[\.]) pedeset dvije tisuće $1
 52(\d{3}[\.]) pedeset dvije tisuće $1
+
+6200(\d[\.]) šezdeset dvije tisuće $1
+620(\d{2}[\.]) šezdeset dvije tisuće $1
 62(\d{3}[\.]) šezdeset dvije tisuće $1
+
+9200(\d[\.]) devedeset dvije tisuće $1
+920(\d{2}[\.]) devedeset dvije tisuće $1
 92(\d{3}[\.]) devedeset dvije tisuće $1
-([2378])([34])000[\.] $1deset$2tisućiti
-4([34])000[\.] četrdeset$1tisućiti
-5([34])000[\.] pedeset$1tisućiti
-6([34])000[\.] šezdeset$1tisućiti
-9([34])000[\.] devedeset$1tisućiti
-([2378])([34])00(\d[\.]) $1deset $2 tisuće $3
-4([34])00(\d[\.]) četrdeset $1 tisuće $2
-5([34])00(\d[\.]) pedeset $1 tisuće $2
-6([34])00(\d[\.]) šezdeset $1 tisuće $2
-9([34])00(\d[\.]) devedeset $1 tisuće $2
-([2378])([34])0(\d{2}[\.]) $1deset $2 tisuće $3
-4([34])0(\d{2}[\.]) četrdeset $1 tisuće $2
-5([34])0(\d{2}[\.]) pedeset $1 tisuće $2
-6([34])0(\d{2}[\.]) šezdeset $1 tisuće $2
-9([34])0(\d{2}[\.]) devedeset $1 tisuće $2
-([2378])([34])(\d{3}[\.]) $1deset $2 tisuće $3
-4([34])(\d{3}[\.]) četrdeset $1 tisuće $2
-5([34])(\d{3}[\.]) pedeset $1 tisuće $2
-6([34])(\d{3}[\.]) šezdeset $1 tisuće $2
-9([34])(\d{3}[\.]) devedeset $1 tisuće $2
-([2378])([5-9])000[\.] $1deset$2tisućiti
-4([5-9])000[\.] četrdeset$1tisućiti
-5([5-9])000[\.] pedeset$1tisućiti
-6([5-9])000[\.] šezdeset$1tisućiti
-9([5-9])000[\.] devedeset$1tisućiti
-([2378])([5-9])00(\d[\.]) $1deset $2 tisuća $3
-4([5-9])00(\d[\.]) četrdeset $1 tisuća $2
-5([5-9])00(\d[\.]) pedeset $1 tisuća $2
-6([5-9])00(\d[\.]) šezdeset $1 tisuća $2
-9([5-9])00(\d[\.]) devedeset $1 tisuća $2
-([2378])([5-9])0(\d{2}[\.]) $1deset $2 tisuća $3
-4([5-9])0(\d{2}[\.]) četrdeset $1 tisuća $2
-5([5-9])0(\d{2}[\.]) pedeset $1 tisuća $2
-6([5-9])0(\d{2}[\.]) šezdeset $1 tisuća $2
-9([5-9])0(\d{2}[\.]) devedeset $1 tisuća $2
-([2378])([5-9])(\d{3}[\.]) $1deset $2 tisuća $3
-4([5-9])(\d{3}[\.]) četrdeset $1 tisuća $2
-5([5-9])(\d{3}[\.]) pedeset $1 tisuća $2
-6([5-9])(\d{3}[\.]) šezdeset $1 tisuća $2
-9([5-9])(\d{3}[\.]) devedeset $1 tisuća $2
+
+([2378])([3-9])00(\d[\.]) $1deset $2 tisuće $3
+([2378])([3-9])0(\d{2}[\.]) $1deset $2 tisuće $3
+([2378])([3-9])(\d{3}[\.]) $1deset $2 tisuće $3
+
+4([3-9])00(\d[\.]) četrdeset $1 tisuće $2
+4([3-9])0(\d{2}[\.]) četrdeset $1 tisuće $2
+4([3-9])(\d{3}[\.]) četrdeset $1 tisuće $2
+
+5([3-9])00(\d[\.]) pedeset $1 tisuće $2
+5([3-9])0(\d{2}[\.]) pedeset $1 tisuće $2
+5([3-9])(\d{3}[\.]) pedeset $1 tisuće $2
+
+6([3-9])00(\d[\.]) šezdeset $1 tisuće $2
+6([3-9])0(\d{2}[\.]) šezdeset $1 tisuće $2
+6([3-9])(\d{3}[\.]) šezdeset $1 tisuće $2
+
+9([3-9])00(\d[\.]) devedeset $1 tisuće $2
+9([3-9])0(\d{2}[\.]) devedeset $1 tisuće $2
+9([3-9])(\d{3}[\.]) devedeset $1 tisuće $2
+
+
 100000[\.] stotisućiti
 10000(\d[\.]) sto tisuća $1
 1000(\d{2}[\.]) sto tisuća $1
