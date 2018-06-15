@@ -1,6 +1,8 @@
 #
 # Regular number to text transducer for Croatian written in Soros
-# Copyright (c) Krunoslav Šebetić <kruno.se@gmx.com> 2017.
+# Copyright (c) Krunoslav Šebetić <kruno.se@gmx.com> 2018.
+#
+# Pravila za ispis valuta preuzeta iz inačice koju je napravio Mihovil Stanic <mihovil.stanic@gmail.com> iz 2014.
 #
 #
 # get newest version of rules from https://www.github.com/krunose/hr-numbertext
