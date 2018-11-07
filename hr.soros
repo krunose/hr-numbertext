@@ -792,12 +792,16 @@ __numbertext__
 9[\.] deveti
 (10)[\.] $1i
 (1\d)[\.] $1i
-(\d0)[\.] $1i
-([2378])(\d[\.]) $1deset $2
-4(\d[\.]) četrdeset $1
-5(\d[\.]) pedeset $1
-6(\d[\.]) šezdeset $1
-9(\d[\.]) devedeset $1
+([2378])0[\.] $1deseti
+([2378])([1-9][\.]) $1deset $2
+40[\.] četrdeseti
+4([1-9][\.]) četrdeset $1
+50[\.] pedeseti
+5([1-9][\.]) pedeset $1
+60[\.] šezdeseti
+6([1-9][\.]) šezdeset $1
+90[\.] devedeseti
+9([1-9][\.]) devedeset $1
 100[\.] stoti
 10(\d[\.]) sto $1
 1(\d{2}[\.]) sto $1
