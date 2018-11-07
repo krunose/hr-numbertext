@@ -40,4 +40,4 @@ Pravila za hrvatski su dostupna na adresi https://github.com/krunose/hr-numberte
 
 ---
 
-Zadnja izmjena pravila 2018-06-15
+Zadnja izmjena pravila 2018-11-07
